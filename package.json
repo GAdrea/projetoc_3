@@ -1,0 +1,22 @@
+{
+  "name": "projetoc_3",
+  "version": "1.0.0",
+  "description": "Mon projet dans le cadre de ma formation en développement web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GAdrea/projetoc_3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GAdrea/projetoc_3/issues"
+  },
+  "homepage": "https://github.com/GAdrea/projetoc_3#readme",
+  "dependencies": {
+    "sass": "^1.52.1"
+  }
+}
