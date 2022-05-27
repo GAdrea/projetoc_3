@@ -1,0 +1,7 @@
+// Déclarer dans l'ordre suivant: utils, base, components, layouts
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import './base/global';
+
+@import './layouts/header';
