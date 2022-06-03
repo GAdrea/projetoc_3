@@ -18,5 +18,6 @@
   "homepage": "https://github.com/GAdrea/projetoc_3#readme",
   "dependencies": {
     "sass": "^1.52.1"
-  }
+  },
+  "devDependencies": {}
 }
