@@ -9,11 +9,21 @@
   </head>
   <body>
     <header class="page-head">
-      <!-- ajouter une balise nav  -->
-      <a class="page-head_returnlink" href="../index.html" aria-label="Flèche retour">
-      <i class="fa-solid fa-left-long"> </i>
-      </a>
-      <img src="../assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood" class="page-head_logo"/>
+      <!-- ajouter une balise nav. C'est fait  -->
+      <nav class="page-head_nav">
+        <a
+          class="page-head_returnlink"
+          href="../index.html"
+          aria-label="Flèche retour"
+        >
+          <i class="fa-solid fa-left-long"> </i>
+        </a>
+        <img
+          src="../assets/images/logo/ohmyfood.png"
+          alt="Logo Ohmyfood"
+          class="page-head_logo"
+        />
+      </nav>
     </header>
     <main>
       <!-- Simple image ou background? -->
@@ -24,98 +34,94 @@
       />
       <section class="menu">
         <div class="menu_maintitle">
+          <!-- attention aux balises titres, le h1 est unique -->
           <h1 class="maintitle_title">Á la française</h1>
           <p class="maintile_icon"><i class="fa-solid fa-left-long"></i></p>
         </div>
         <!-- Début du menu pour les Entrées -->
         <div class="menu-card">
-          <h1 class="card_maintitle">Entrées</h1>
-          <div class="card">
-            <a class="card_link" href="#">
-              <p class="card_title">Tartare de poulpe acidulé</p>
-              <p class="card_subtitle">Aux zestes d'orange</p>
-              <p class="card_price">25€</p>
-              <p class="card_checkicon">
-                <i class="fa-regular fa-circle-check"></i>
-              </p>
-            </a>
-          </div>
+          <h2 class="card_maintitle">Entrées</h2>
+          <!-- les divs dans les divs inutiles -->
+
+          <a class="card" href="#">
+            <p class="card_title">Tartare de poulpe acidulé</p>
+            <p class="card_subtitle">Aux zestes d'orange</p>
+            <p class="card_price">25€</p>
+            <p class="card_checkicon">
+              <i class="fa-regular fa-circle-check"></i>
+            </p>
+          </a>
+
           <!-- Uniformisation des classes selon la méthode BEM -->
           <!-- Suppression de divs inutiles -->
-          <div class="card">
-            <a class="card_link" href="#">
-              <p class="card_title">Velouté de légumes d'antan</p>
-              <p class="card_subtitle">Carotte, panais, topinambour</p>
-              <p class="card_price">35€</p>
-              <p class="card_checkicon">
-                <i class="fa-regular fa-circle-check"></i>
-              </p>
-            </a>
-          </div>
+
+          <a class="card" href="#">
+            <p class="card_title">Velouté de légumes d'antan</p>
+            <p class="card_subtitle">Carotte, panais, topinambour</p>
+            <p class="card_price">35€</p>
+            <p class="card_checkicon">
+              <i class="fa-regular fa-circle-check"></i>
+            </p>
+          </a>
+
           <!-- attention -->
-          <div class="card">
-            <a class="card_link" href="#">
-              <p class="card_title">Soupe à l'oignon</p>
-              <p class="card_subtitle">Revisitée</p>
-              <p class="card_price">20€</p>
-              <p class="card_checkicon">
-                <i class="fa-regular fa-circle-check"></i>
-              </p>
-            </a>
-          </div>
+
+          <a class="card" href="#">
+            <p class="card_title">Soupe à l'oignon</p>
+            <p class="card_subtitle">Revisitée</p>
+            <p class="card_price">20€</p>
+            <p class="card_checkicon">
+              <i class="fa-regular fa-circle-check"></i>
+            </p>
+          </a>
         </div>
         <!-- Fin du menu pour les Entrées -->
         <!-- Début du menu pour les plats -->
         <div class="menu_card">
-          <h1 class="card_maintitle">Plats</h1>
-          <div class="card">
-            <a class="card_link" href="#">
-              <p class="card_title">Coquilles Saint-Jacques</p>
-              <p class="card_subtitle">Accompagnées d'une purée de panais</p>
-              <p class="card_price">40€</p>
-            </a>
-          </div>
-          <div class="card">
-            <a class="card_link" href="#">
-              <p class="card_title">Magret de canard</p>
-              <p class="card_subtitle">Et parmentier de pommes de terres</p>
-              <p class="card_price">35€</p>
-            </a>
-          </div>
+          <h2 class="card_maintitle">Plats</h2>
+
+          <a class="card" href="#">
+            <p class="card_title">Coquilles Saint-Jacques</p>
+            <p class="card_subtitle">Accompagnées d'une purée de panais</p>
+            <p class="card_price">40€</p>
+          </a>
+
+          <a class="card" href="#">
+            <p class="card_title">Magret de canard</p>
+            <p class="card_subtitle">Et parmentier de pommes de terres</p>
+            <p class="card_price">35€</p>
+          </a>
+
           <!-- Penser à uniformiser les classes des divs pour le code SCSS -->
-          <div class="card">
-            <a class="card_link" href="#">
-              <p class="card_title">Pigeonneau d'Ille-et-Vilaine</p>
-              <p class="card_subtitle">Sur son lit de gnocchis aux légumes</p>
-              <p class="card_price">44€</p>
-            </a>
-          </div>
+
+          <a class="card" href="#">
+            <p class="card_title">Pigeonneau d'Ille-et-Vilaine</p>
+            <p class="card_subtitle">Sur son lit de gnocchis aux légumes</p>
+            <p class="card_price">44€</p>
+          </a>
         </div>
         <!-- Fin du menu pour les plats -->
         <!-- Début du menu pour les desserts -->
         <div class="menu-card">
-          <h1 class="card_maintitle">Desserts</h1>
-          <div class="card">
-            <a class="card_link" href="#">
-              <p class="card_title">Pétales de violettes glacés</p>
-              <p class="card_subtitle">Et purée de noisettes</p>
-              <p class="card_price">18€</p>
-            </a>
-          </div>
-          <div class="card">
-            <a class="card_link" href="#">
-              <p class="card_title">Fondant au chocolat</p>
-              <p class="card_subtitle">Revisité</p>
-              <p class="card_price">22€</p>
-            </a>
-          </div>
-          <div class="card">
-            <a class="card_link" href="#">
-              <p class="card_title">Millefeuille croustillant</p>
-              <p class="card_subtitle">Myrtilles et pâte d'amande</p>
-              <p class="card_price">23€</p>
-            </a>
-          </div>
+          <h2 class="card_maintitle">Desserts</h2>
+
+          <a class="card" href="#">
+            <p class="card_title">Pétales de violettes glacés</p>
+            <p class="card_subtitle">Et purée de noisettes</p>
+            <p class="card_price">18€</p>
+          </a>
+
+          <a class="card" href="#">
+            <p class="card_title">Fondant au chocolat</p>
+            <p class="card_subtitle">Revisité</p>
+            <p class="card_price">22€</p>
+          </a>
+
+          <a class="card" href="#">
+            <p class="card_title">Millefeuille croustillant</p>
+            <p class="card_subtitle">Myrtilles et pâte d'amande</p>
+            <p class="card_price">23€</p>
+          </a>
         </div>
       </section>
       <section class="order">
