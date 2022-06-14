@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Le délice des sens</title>
+  </head>
+  <body>
+    <header class="page-head">
+      <!-- ajouter une balise nav. C'est fait  -->
+      <nav class="page-head_nav">
+        <a
+          class="page-head_returnlink"
+          href="../index.html"
+          aria-label="Flèche retour"
+        >
+          <i class="fa-solid fa-left-long"> </i>
+        </a>
+        <img
+          src="../assets/images/logo/ohmyfood.png"
+          alt="Logo Ohmyfood"
+          class="page-head_logo"
+        />
+      </nav>
+    </header>
+    <main>
+      <!-- Simple image ou background? -->
+      <img
+        src="../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+        alt="Photo du restaurant Le délice des sens"
+        class="picture"
+      />
+      <section class="menu">
+        <div class="menu_maintitle">
+          <!-- attention aux balises titres, le h1 est unique -->
+          <h1 class="maintitle_title">La note enchantée</h1>
+          <p class="maintile_icon"><i class="fa-solid fa-left-long"></i></p>
+        </div>
+        <!-- Début du menu pour les Entrées -->
+        <div class="menu-card">
+          <h2 class="card_maintitle">Entrées</h2>
+          <!-- les divs dans les divs inutiles -->
+
+          <a class="card" href="#">
+            <p class="card_title">Ravioles de foie gras</p>
+            <p class="card_subtitle">Accompagnés de leur crème à la truffe</p>
+            <p class="card_price">25€</p>
+            <p class="card_checkicon">
+              <i class="fa-regular fa-circle-check"></i>
+            </p>
+          </a>
+
+          <!-- Uniformisation des classes selon la méthode BEM -->
+          <!-- Suppression de divs inutiles -->
+
+          <a class="card" href="#">
+            <p class="card_title">Caviar osciètre</p>
+            <p class="card_subtitle">Sur blini à la farine de blé noir</p>
+            <p class="card_price">35€</p>
+            <p class="card_checkicon">
+              <i class="fa-regular fa-circle-check"></i>
+            </p>
+          </a>
+
+          <!-- attention -->
+
+          <a class="card" href="#">
+            <p class="card_title">Homard et espuma de potiron</p>
+            <p class="card_subtitle">Mariné aux zestes d'orange</p>
+            <p class="card_price">20€</p>
+            <p class="card_checkicon">
+              <i class="fa-regular fa-circle-check"></i>
+            </p>
+          </a>
+
+          <a class="card" href="#">
+            <p class="card_title">Foie gras de canard cuit entier</p>
+            <p class="card_subtitle">confiture de figue et pain toasté</p>
+            <p class="card_price">35€</p>
+            <p class="card_checkicon">
+              <i class="fa-regular fa-circle-check"></i>
+            </p>
+          </a>
+        </div>
+        <!-- Fin du menu pour les Entrées -->
+        <!-- Début du menu pour les plats -->
+        <div class="menu_card">
+          <h2 class="card_maintitle">Plats</h2>
+
+          <a class="card" href="#">
+            <p class="card_title">Noix decoquilles Saint-Jacques</p>
+            <p class="card_subtitle">Sur lit de purée de céleri-rave</p>
+            <p class="card_price">40€</p>
+          </a>
+
+          <a class="card" href="#">
+            <p class="card_title">Langoustine poêlée</p>
+            <p class="card_subtitle">Purée de patate douce</p>
+            <p class="card_price">35€</p>
+          </a>
+
+          <!-- Penser à uniformiser les classes des divs pour le code SCSS -->
+
+          <a class="card" href="#">
+            <p class="card_title">Mijoté de queue de boeuf</p>
+            <p class="card_subtitle">Et riz sauvage aux zests de citron</p>
+            <p class="card_price">44€</p>
+          </a>
+        </div>
+        <!-- Fin du menu pour les plats -->
+        <!-- Début du menu pour les desserts -->
+        <div class="menu-card">
+          <h2 class="card_maintitle">Desserts</h2>
+
+          <a class="card" href="#">
+            <p class="card_title">macaron noisette et chocolat</p>
+            <p class="card_subtitle">
+              Glace au caramel brun et sel de Guérande
+            </p>
+            <p class="card_price">18€</p>
+          </a>
+
+          <a class="card" href="#">
+            <p class="card_title">Baba au rhum revisité</p>
+            <p class="card_subtitle">Avec son coulis de citron</p>
+            <p class="card_price">22€</p>
+          </a>
+
+          <a class="card" href="#">
+            <p class="card_title">Tarte au citron meringuée</p>
+            <p class="card_subtitle">Destructurée</p>
+            <p class="card_price">23€</p>
+          </a>
+        </div>
+      </section>
+      <section class="order">
+        <button class="order_button">Commander</button>
+      </section>
+    </main>
+    <footer class="index-foot">
+      <img
+        class="index-foot__logo"
+        src="../assets/images/logo/ohmyfood.png"
+        alt="Logo Ohmyfood"
+      />
+      <div class="index-foot__link">
+        <p class="link__icon"><i class="fa-solid fa-utensils"></i></p>
+        <a href="#" class="link__text">Proposer un restaurant</a>
+      </div>
+      <div class="index-foot__link">
+        <p class="link__icon"><i class="fa-solid fa-handshake-angle"></i></p>
+        <a href="#" class="link__text">Devenir partenaire</a>
+      </div>
+      <div class="index-foot__link">
+        <a href="#" class="link__text">Mentions légales</a>
+      </div>
+      <div class="index-foot__link">
+        <a href="mailto:ohmyfood@gmail.com" class="link__text">Contact</a>
+      </div>
+    </footer>
+  </body>
+</html>
