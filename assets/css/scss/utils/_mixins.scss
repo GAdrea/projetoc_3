@@ -1,0 +1,17 @@
+// Mixin pour la police
+
+@mixin titles-and-logo {
+  @font-face {
+    font-family: Shrikhand;
+    src: url(../../../fonts/Shrikhand/Shrikhand-Regular.ttf);
+  }
+}
+
+@mixin text {
+  @font-face {
+    font-family: Roboto;
+    src: url(../../../fonts/Roboto/Roboto-Regular.ttf);
+  }
+}
+
+// Fin de la mixin pour la police
