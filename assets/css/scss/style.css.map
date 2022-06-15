@@ -1,13 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AGAA,AAAA,CAAC,CAAA;EACG,eAAe,EAAE,MAAM;CAC1B",
-    "sources": [
-        "style.scss",
-        "utils/_variables.scss",
-        "utils/_mixins.scss",
-        "base/_global.scss",
-        "layouts/_header.scss"
-    ],
-    "names": [],
-    "file": "style.css"
-}
+{"version":3,"sources":["base/_global.scss","style.css"],"names":[],"mappings":"AAAA;EACI,uBAAA;ACCJ","file":"style.css"}
