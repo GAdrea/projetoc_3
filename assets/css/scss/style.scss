@@ -1,9 +1,18 @@
 // Déclarer dans l'ordre suivant: utils, base, components, layouts
+
+// Utils
 @import "./utils/variables";
 @import "./utils/mixins";
 
+// Base
+
 @import "./base/global";
+
+// Layouts
 
 @import "./layouts/header";
 @import "./layouts/footer";
+
+// Pages
+@import "./pages/index";
 @import "./pages/restaurant";

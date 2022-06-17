@@ -1,15 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AGAA,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,MAAM;CACxB;;AEFD,AAAA,WAAW,CAAC;EACV,gBAAgB,EAAE,KAAK;EACvB,MAAM,EAAE,CAAC;EACT,YAAY,EAAE,GAAG;EACjB,WAAW,EAAE,GAAG;EAChB,eAAe,EAAE,IAAI;CAKtB;;AAVD,AAME,WANS,CAMT,iBAAiB,CAAC;EAChB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;CACb",
-    "sources": [
-        "style.scss",
-        "utils/_variables.scss",
-        "utils/_mixins.scss",
-        "base/_global.scss",
-        "layouts/_header.scss",
-        "layouts/_footer.scss",
-        "pages/_restaurant.scss"
-    ],
-    "names": [],
-    "file": "style.css"
-}
+{"version":3,"sources":["base/_global.scss","style.css","utils/_mixins.scss","layouts/_header.scss","layouts/_footer.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;ACCF;;ACCE;EFCF;;;IEAI,sBAAA;IACA,wDAAA;EDKF;AACF;;ADDA;EACE,SAAA;EACA,UAAA;ACIF;ACNE;EFAF;IECI,mBAAA;IACA,kDAAA;EDSF;AACF;;AERA;EACE;IDWA,aAAA;IACA,sBAAA;IACA,uBAAA;IACA,mBAAA;EDCA;EEbE;IACE,YAAA;IACA,UAAA;EFeJ;;EEZA;IDFA,aAAA;IACA,uBAAA;IACA,mBAAA;EDkBA;AACF;AGzCA;EACE;IACE,uBAAA;IACA,iBAAA;IACA,gBAAA;IACA,qBAAA;EH2CF;EG1CE;IACE,UAAA;IACA,YAAA;EH4CJ;AACF","file":"style.css"}
