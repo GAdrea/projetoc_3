@@ -4,8 +4,8 @@
 
 @font-face {
   h1,
-h2,
-h3 {
+  h2,
+  h3 {
     font-family: Shrikhand;
     src: url(../../../fonts/Shrikhand/Shrikhand-Regular.ttf);
   }
@@ -51,4 +51,4 @@ main {
     width: 50%;
     height: auto;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
