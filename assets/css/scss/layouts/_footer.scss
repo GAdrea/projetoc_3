@@ -1,12 +1,15 @@
-@media screen and(max-width: $smartphone) {
-  .index-foot {
-    background-color: black;
-    padding-left: 20%;
-    padding-top: 20%;
-    text-decoration: none;
-    .index-foot__logo {
-      width: 50%;
-      height: auto;
+footer {
+  @media screen and(max-width: $smartphone) {
+    .index-foot {
+      background-color: black;
+      padding-left: 20%;
+      padding-top: 20%;
+      text-decoration: none;
+      .index-foot__logo {
+        width: 50%;
+        height: auto;
+      }
     }
   }
 }
+

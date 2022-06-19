@@ -1,16 +1,26 @@
-* {
+@font-face {
+  font-family: Shrikhand;
+  src: url(../../../fonts/Shrikhand/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../../../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+* { 
   scroll-behavior: smooth;
 }
 
 h1,
 h2,
 h3 {
-  @include titles-and-logo;
+ font-family: Shrikhand;
 }
 
-main {
+body {
   margin: 0;
   padding: 0;
 
-  @include text;
+  font-family: Roboto;
 }

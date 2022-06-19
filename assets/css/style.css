@@ -6,7 +6,7 @@
   h1,
 h2,
 h3 {
-    font-family: Shrikhand;
+    font-family: "Shrikhand";
     src: url(../../../fonts/Shrikhand/Shrikhand-Regular.ttf);
   }
 }
@@ -17,7 +17,7 @@ main {
 }
 @font-face {
   main {
-    font-family: Roboto;
+    font-family: "Roboto";
     src: url(../../../fonts/Roboto/Roboto-Regular.ttf);
   }
 }
