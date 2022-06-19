@@ -13,15 +13,13 @@
 //     }
 // }
 
-header{
+.index-head{
   @media screen and (max-width: $smartphone) {
-    .index-head {
       @include flexbox-columncenter;
       .logo_picture {
         height: auto;
         width: 20%;
       }
-    }
     .index-head__location {
       @include flexbox-rowcenter;
     }

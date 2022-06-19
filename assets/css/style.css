@@ -1,25 +1,25 @@
+@font-face {
+  font-family: Shrikhand;
+  src: url(../../../fonts/Shrikhand/Shrikhand-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../../../fonts/Roboto/Roboto-Regular.ttf);
+}
 * {
   scroll-behavior: smooth;
 }
 
-@font-face {
-  h1,
+h1,
 h2,
 h3 {
-    font-family: "Shrikhand";
-    src: url(../../../fonts/Shrikhand/Shrikhand-Regular.ttf);
-  }
+  font-family: Shrikhand;
 }
 
-main {
+body {
   margin: 0;
   padding: 0;
-}
-@font-face {
-  main {
-    font-family: "Roboto";
-    src: url(../../../fonts/Roboto/Roboto-Regular.ttf);
-  }
+  font-family: Roboto;
 }
 
 @media screen and (max-width: 480px) {
@@ -33,16 +33,16 @@ main {
     height: auto;
     width: 20%;
   }
-
-  .index-head__location {
+  .index-head .index-head__location {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
+
 @media screen and (max-width: 480px) {
   .index-foot {
-    background-color: black;
+    background-color: #353535;
     padding-left: 20%;
     padding-top: 20%;
     text-decoration: none;
@@ -51,4 +51,4 @@ main {
     width: 50%;
     height: auto;
   }
-}
+}/*# sourceMappingURL=style.css.map */
