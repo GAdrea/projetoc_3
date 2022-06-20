@@ -16,3 +16,12 @@
     }
   }
 }
+
+.section2 {
+  @media screen and (max-width: $smartphone) {
+    @include flexbox-columncenter;
+    .section2__maintitle {
+      text-align: left;
+    }
+  }
+}

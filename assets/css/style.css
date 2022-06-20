@@ -20,6 +20,10 @@ p {
   font-family: Roboto;
 }
 
+img {
+  object-fit: cover;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -38,6 +42,22 @@ body {
     background: -moz-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
     background: -webkit-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
     background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section2__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+    width: 90%;
+    margin-top: 10px;
+    border: 5px solid rgba(0, 0, 0, 0.02);
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
   }
 }
 
@@ -104,5 +124,17 @@ body {
     font-size: 1.2rem;
     text-align: center;
     font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section2 .section2__maintitle {
+    text-align: left;
   }
 }
