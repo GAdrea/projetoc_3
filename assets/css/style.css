@@ -16,10 +16,13 @@ h3 {
   font-family: Shrikhand;
 }
 
+p {
+  font-family: Roboto;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto;
 }
 
 @media screen and (max-width: 480px) {
@@ -28,6 +31,7 @@ body {
     height: auto;
     color: white;
     padding: 10px;
+    margin-top: 20px;
     border: 1px solid #fdfdfd;
     border-radius: 139px;
     background: #ff79da;
@@ -87,14 +91,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #f6f6f6;
+    padding-top: 10px;
+    padding-bottom: 50px;
   }
   .section1 .section1__maintitle {
     font-size: 1.8rem;
     text-align: center;
     font-weight: bold;
   }
-  .section1 .section1__maintitle .section1__subtitle {
+  .section1 .section1__subtitle {
     font-size: 1.2rem;
     text-align: center;
+    font-weight: normal;
   }
 }

@@ -1,14 +1,18 @@
 .section1 {
   @media screen and (max-width: $smartphone) {
     @include flexbox-columncenter;
+    background-color: $background-color-grey;
+    padding-top: 10px;
+    padding-bottom: 50px;
     .section1__maintitle {
       font-size: $title-size;
       text-align: center;
       font-weight: bold;
-      .section1__subtitle {
-        font-size: $subtitle-size;
-        text-align: center;
-      }
+    }
+    .section1__subtitle {
+      font-size: $subtitle-size;
+      text-align: center;
+      font-weight: normal;
     }
   }
 }
