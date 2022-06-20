@@ -1,5 +1,5 @@
 // Déclarer dans l'ordre suivant: utils, base, components, layouts
-// Se renseigner sur les extensions suivantes: @use et @forward. Permet de ne pas utiliser le bouton watch sass
+// Se renseigner sur les extensions suivantes: @use et @forward.
 
 // Utils
 @import "./utils/variables";
@@ -9,8 +9,11 @@
 
 @import "./base/global";
 
-// Layouts
+// Components
 
+@import "./components/button_section1";
+
+// Layouts
 @import "./layouts/header";
 @import "./layouts/footer";
 

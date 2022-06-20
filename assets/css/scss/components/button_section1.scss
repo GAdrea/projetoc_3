@@ -1,0 +1,24 @@
+.section1__searchbutton {
+  @media screen and (max-width: $smartphone) {
+    width: 60%;
+    height: auto;
+    color: white;
+    padding: 10px;
+    border: 1px solid #fdfdfd;
+    border-radius: 139px;
+    background: #ff79da;
+    background: -moz-linear-gradient(
+      -45deg,
+      #ff79da 0%,
+      #ff79da 16%,
+      #9356dc 100%
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      #ff79da 0%,
+      #ff79da 16%,
+      #9356dc 100%
+    );
+    background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
+  }
+}
