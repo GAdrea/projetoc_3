@@ -1,3 +1,4 @@
+// Début de la section 1
 .section1 {
   @media screen and (max-width: $smartphone) {
     @include flexbox-columncenter;
@@ -17,6 +18,9 @@
   }
 }
 
+// Fin de la section 1
+
+// Début de la section 2
 .section2 {
   @media screen and (max-width: $smartphone) {
     @include flexbox-columncenter;
@@ -25,3 +29,19 @@
     }
   }
 }
+
+// Fin de la section 2
+
+// Début de la section 3
+
+.section3 {
+  @media screen and (max-width: $smartphone) {
+    @include flexbox-columncenter;
+    background-color: $background-color-grey;
+    .resto-prev__maintitle {
+      text-align: left;
+    }
+  }
+}
+
+// Fin de la section 3
