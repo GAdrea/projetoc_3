@@ -31,12 +31,25 @@ body {
   }
   .index-head .logo_picture {
     height: auto;
-    width: 20%;
-  }
-  .index-head .index-head__location {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    padding: 15px;
+  }
+  .index-head .index-head__location {
+    box-shadow: inset 5px 5px 15px 5px #f6f6f6;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+    background-color: #eaeaea;
+  }
+  .index-head .index-head__locationtext {
+    font-size: 1.2rem;
   }
 }
 
@@ -51,4 +64,4 @@ body {
     width: 50%;
     height: auto;
   }
-}/*# sourceMappingURL=style.css.map */
+}
