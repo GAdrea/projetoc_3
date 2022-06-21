@@ -89,13 +89,19 @@ body {
     padding: 5px;
   }
   .resto-prev__card .card__picture {
-    width: 100%;
-    height: auto;
+    width: 319px;
+    height: 216px;
     border-radius: 17px 17px 0px 0px;
   }
   .resto-prev__card .card__description {
     border: 2px solid rgba(0, 0, 0, 0.01);
     border-radius: 0px 0px 17px 17px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
   }
 }
 
