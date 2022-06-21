@@ -8,6 +8,7 @@
 }
 * {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 h1,
@@ -21,7 +22,8 @@ p {
 }
 
 img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body {
@@ -39,8 +41,6 @@ body {
     border: 1px solid #fdfdfd;
     border-radius: 139px;
     background: #ff79da;
-    background: -moz-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
-    background: -webkit-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
     background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
   }
 }
@@ -55,8 +55,6 @@ body {
     width: 90%;
     margin-top: 10px;
     border: 5px solid rgba(0, 0, 0, 0.02);
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
     border-radius: 40px;
     background-color: #f6f6f6;
   }
@@ -94,14 +92,24 @@ body {
     border-radius: 17px 17px 0px 0px;
   }
   .resto-prev__card .card__description {
-    border: 2px solid rgba(0, 0, 0, 0.01);
+    border: 5px solid rgba(0, 0, 0, 0.01);
     border-radius: 0px 0px 17px 17px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    margin: auto;
     flex-wrap: wrap;
+  }
+  .resto-prev__card .description__title {
+    width: 95%;
+  }
+  .resto-prev__card .description__subtitle {
+    width: 90%;
+    margin-top: -10px;
+  }
+  .resto-prev__card .description__hearticon {
+    font-size: 35px;
   }
 }
 
@@ -194,4 +202,4 @@ body {
   .section3 .resto-prev__maintitle {
     text-align: left;
   }
-}
+}/*# sourceMappingURL=style.css.map */

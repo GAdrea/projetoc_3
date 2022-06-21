@@ -6,10 +6,19 @@
   margin: auto;
 }
 
+// A retenir: place-content permet de combiner justify-content et align-items
+
 @mixin flexbox-columncenter {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+@mixin flexbox-rowstart {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
 }
 

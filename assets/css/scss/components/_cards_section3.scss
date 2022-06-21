@@ -26,11 +26,21 @@
       border-radius: 17px 17px 0px 0px;
     }
     .card__description {
-      border: 2px solid rgba(0, 0, 0, 0.01);
+      border: 5px solid rgba(0, 0, 0, 0.01);
       border-radius: 0px 0px 17px 17px;
       width: 100%;
-      @include flexbox-rowcenter;
+      @include flexbox-rowstart;
       flex-wrap: wrap;
+    }
+    .description__title{
+      width: 95%;
+    }
+    .description__subtitle{
+      width: 90%;
+      margin-top: -10px;
+    }
+    .description__hearticon{
+      font-size: 35px;
     }
   }
 }
