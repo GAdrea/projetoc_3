@@ -147,14 +147,34 @@ body {
 
 @media screen and (max-width: 480px) {
   .index-foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     background-color: #353535;
-    padding-left: 20%;
-    padding-top: 20%;
-    text-decoration: none;
+    padding-left: 7%;
+    padding-top: 8%;
   }
   .index-foot .index-foot__logo {
-    width: 50%;
+    width: 25%;
     height: auto;
+    margin-bottom: 20px;
+    filter: invert(99%) sepia(36%) saturate(0%) hue-rotate(57deg) brightness(112%) contrast(100%);
+  }
+  .index-foot .index-foot__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    height: 25px;
+  }
+  .index-foot .link__text {
+    text-decoration: none;
+    color: white;
+  }
+  .index-foot .link__icon {
+    color: white;
   }
 }
 
