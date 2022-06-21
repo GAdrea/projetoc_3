@@ -102,14 +102,15 @@ body {
     flex-wrap: wrap;
   }
   .resto-prev__card .description__title {
-    width: 95%;
+    width: 100%;
   }
   .resto-prev__card .description__subtitle {
-    width: 90%;
+    width: 88%;
     margin-top: -10px;
   }
   .resto-prev__card .description__hearticon {
     font-size: 35px;
+    align-self: stretch;
   }
 }
 
@@ -185,6 +186,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
   }
   .section2 .section2__maintitle {
     text-align: left;

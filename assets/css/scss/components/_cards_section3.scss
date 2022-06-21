@@ -33,14 +33,15 @@
       flex-wrap: wrap;
     }
     .description__title{
-      width: 95%;
+      width: 100%;
     }
     .description__subtitle{
-      width: 90%;
+      width: 88%;
       margin-top: -10px;
     }
     .description__hearticon{
       font-size: 35px;
+      align-self: stretch;
     }
   }
 }
