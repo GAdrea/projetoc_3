@@ -29,6 +29,12 @@ justify-content: flex-start;
 align-items: flex-start;
 }
 
+@mixin flexbox-spacebetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
 // Fin de la mixin pour la mise en page
 
 
