@@ -24,9 +24,10 @@
 .section2 {
   @media screen and (max-width: $smartphone) {
     @include flexbox-columncenter;
+    align-items: flex-start;
     margin-bottom: 50px;
     .section2__maintitle {
-      text-align: left;
+      margin-left: 20px;
     }
   }
 }
