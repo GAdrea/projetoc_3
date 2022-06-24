@@ -1,26 +1,28 @@
 .index-foot {
   @media screen and(max-width: $smartphone) {
     @include flexbox-columnstart;
-      background-color:$footer-background;
-      padding-left: 7%;
-      padding-top: 8%;
-      .index-foot__logo {
-        width: 25%;
-        height: auto;
-        margin-bottom: 20px;
-        filter:invert(99%) sepia(36%) saturate(0%) hue-rotate(57deg) brightness(112%) contrast(100%);
-      } 
-      .index-foot__link{
-        @include flexbox-rowstart;
-        gap: 10px;
-        height: 25px;
-      }
-      .link__text{
-        text-decoration: none;
-        color: white;
-      }
-      .link__icon{
-        color: white;
-      }
-}
+    background-color: $footer-background;
+    padding-left: 7%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    .index-foot__logo {
+      width: 25%;
+      height: auto;
+      margin-bottom: 20px;
+      filter: invert(99%) sepia(36%) saturate(0%) hue-rotate(57deg)
+        brightness(112%) contrast(100%);
+    }
+    .index-foot__link {
+      @include flexbox-rowstart;
+      gap: 10px;
+      height: 25px;
+    }
+    .link__text {
+      text-decoration: none;
+      color: white;
+    }
+    .link__icon {
+      color: white;
+    }
+  }
 }
