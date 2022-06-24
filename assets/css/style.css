@@ -22,8 +22,7 @@ p {
 }
 
 img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 body {
@@ -41,6 +40,8 @@ body {
     border: 1px solid #fdfdfd;
     border-radius: 139px;
     background: #ff79da;
+    background: -moz-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
+    background: -webkit-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
     background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
   }
 }
@@ -88,6 +89,7 @@ body {
     align-items: center;
     width: 80%;
     height: auto;
+    margin-bottom: 30px;
     border-radius: 17px;
   }
   .resto-prev__card .resto-prev__cardlink {
@@ -109,12 +111,12 @@ body {
     width: 319px;
     height: 216px;
     border-radius: 17px 17px 0px 0px;
-    box-shadow: 5px 5px 8px 5px #DFDFDF;
+    box-shadow: 5px 5px 8px 5px #dfdfdf;
   }
   .resto-prev__card .card__description {
     border: 5px solid rgba(0, 0, 0, 0.01);
     border-radius: 0px 0px 17px 17px;
-    box-shadow: 5px 5px 8px 5px #DFDFDF;
+    box-shadow: 5px 5px 8px 5px #dfdfdf;
     width: 100%;
     height: 114px;
     padding-left: 10px;
@@ -249,7 +251,4 @@ body {
     align-items: center;
     background-color: #f6f6f6;
   }
-  .section3 .resto-prev__maintitle {
-    text-align: left;
-  }
-}/*# sourceMappingURL=style.css.map */
+}

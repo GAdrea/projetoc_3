@@ -3,6 +3,7 @@
     @include flexbox-columncenter;
     width: 80%;
     height: auto;
+    margin-bottom: 30px;
     // border: 2px solid rgba(0, 0, 0, 0.01); config ratée
     border-radius: 17px;
     .resto-prev__cardlink {
@@ -24,28 +25,28 @@
       width: 319px;
       height: 216px;
       border-radius: 17px 17px 0px 0px;
-      box-shadow: 5px 5px 8px 5px #DFDFDF;
+      box-shadow: 5px 5px 8px 5px #dfdfdf;
     }
     .card__description {
       border: 5px solid rgba(0, 0, 0, 0.01);
       border-radius: 0px 0px 17px 17px;
-      box-shadow: 5px 5px 8px 5px #DFDFDF;
+      box-shadow: 5px 5px 8px 5px #dfdfdf;
       width: 100%;
       height: 114px;
       padding-left: 10px;
       @include flexbox-spacebetween;
       flex-wrap: wrap;
     }
-    .description__title{
+    .description__title {
       width: 70%;
       font-weight: bold;
     }
-    .description__subtitle{
+    .description__subtitle {
       width: 60%;
       margin-top: -15px;
       font-weight: normal;
     }
-    .description__hearticon{
+    .description__hearticon {
       font-size: 30px;
       align-self: stretch;
       position: relative;
