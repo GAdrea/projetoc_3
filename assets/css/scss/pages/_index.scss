@@ -40,6 +40,7 @@
   @media screen and (max-width: $smartphone) {
     @include flexbox-columncenter;
     background-color: $background-color-grey;
+    margin-bottom: 10px;
     .resto-prev__maintitle {
       position: relative;
       right: 105px;
