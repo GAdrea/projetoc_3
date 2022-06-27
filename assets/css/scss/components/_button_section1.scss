@@ -1,9 +1,10 @@
 .section1__searchbutton {
   @media screen and (max-width: $smartphone) {
     width: 60%;
-    height: auto;
+    height: 58px;
     color: white;
-    padding: 10px;
+    font-size: $subtitle2-size;
+    font-weight: bold;
     margin-top: 20px;
     border: 1px solid #fdfdfd;
     border-radius: 139px;
