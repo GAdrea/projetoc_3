@@ -6,10 +6,10 @@
     width: 90%;
     height: 70px;
     margin-top: 30px;
-    box-shadow: 5px 5px 8px 5px #DFDFDF;
+    box-shadow: 5px 5px 8px 5px #dfdfdf;
     border-radius: 15px;
     background-color: $background-color-grey;
-    .section2__number{
+    .section2__number {
       @include flexbox-rowcenter;
       position: absolute;
       left: 10px;
@@ -18,15 +18,15 @@
       height: 25px;
       color: white;
       font-size: 10px;
-    border-radius: 50%;
-    background-color: $primary-color;
+      border-radius: 50%;
+      background-color: $primary-color;
     }
-    .section2__icon{
+    .section2__icon {
       color: rgba(0, 0, 0, 0.506);
       position: absolute;
       left: 60px;
     }
-    .section2__text{
+    .section2__text {
       font-size: $subtitle-size;
       font-weight: bold;
     }
