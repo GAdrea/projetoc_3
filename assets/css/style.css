@@ -264,4 +264,47 @@ body {
     position: relative;
     right: 105px;
   }
+}
+
+@media screen and (max-width: 480px) {
+  .page-head .page-head_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .page-head .page-head_returnlink {
+    font-size: 1.8rem;
+    position: absolute;
+    left: 4%;
+  }
+  .page-head .page-head_logo {
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .picture {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu {
+    border-radius: 40px 40px 0px 0px;
+    background-color: #f6f6f6;
+  }
+  .menu .menu_maintitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .menu .maintitle_title {
+    font-size: 1.8rem;
+  }
 }/*# sourceMappingURL=style.css.map */
