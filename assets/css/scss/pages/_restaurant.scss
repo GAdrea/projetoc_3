@@ -36,16 +36,18 @@
 
 .menu{
     @media screen and (max-width:$smartphone) {
-        border-radius: 40px 40px 0px 0px;
+        width: 100%;
+        position: relative;
+        margin-top: -60px;
+        border-radius: 50px 50px 0px 0px;
         background-color: $background-color-grey;
      .menu_maintitle{
 @include flexbox-rowcenter;
-
      }
+
      .maintitle_title{
         font-size: $title-size;
-     }
     }
 }
-
+}
 // Fin de la partie pour le menu
