@@ -4,11 +4,19 @@
     .card_maintitle {
       font-size: $subtitle-size;
       font-weight: normal;
+      padding-left: 28px;
+    }
+    .maintitle_border{
+      width: 8%;
+      border-bottom: 3px solid $tertiary-color;
+      margin-top: -10px;
+      margin-bottom: 20px;
+      margin-left: 28px;
     }
     .card {
       @include flexbox-rowcenter;
       width: 90%;
-      height: 75px;
+      height: 70px;
       flex-wrap: wrap;
       border-radius: 20px 20px 20px 20px;
       color: black;
@@ -21,13 +29,17 @@
       font-weight: bold;
       width: 100%;
       margin: 0;
+      font-size: $subtitle-size;
     }
     .card_subtitle {
       width: 90%;
       margin: 0;
+      font-size: $subtitle2-size;
+      margin-top: -15px;
     }
     .card_price {
       font-weight: bold;
+      margin-top: 2px;
     }
     .card_checkicon {
       display: none;

@@ -22,7 +22,8 @@ p {
 }
 
 img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body {
@@ -41,8 +42,6 @@ body {
     border: 1px solid #fdfdfd;
     border-radius: 139px;
     background: #ff79da;
-    background: -moz-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
-    background: -webkit-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
     background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
   }
 }
@@ -157,6 +156,14 @@ body {
   .menu-card .card_maintitle {
     font-size: 1.2rem;
     font-weight: normal;
+    padding-left: 28px;
+  }
+  .menu-card .maintitle_border {
+    width: 8%;
+    border-bottom: 3px solid #99e2d0;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-left: 28px;
   }
   .menu-card .card {
     display: flex;
@@ -164,7 +171,7 @@ body {
     align-items: center;
     margin: auto;
     width: 90%;
-    height: 75px;
+    height: 70px;
     flex-wrap: wrap;
     border-radius: 20px 20px 20px 20px;
     color: black;
@@ -177,13 +184,17 @@ body {
     font-weight: bold;
     width: 100%;
     margin: 0;
+    font-size: 1.2rem;
   }
   .menu-card .card_subtitle {
     width: 90%;
     margin: 0;
+    font-size: 1rem;
+    margin-top: -15px;
   }
   .menu-card .card_price {
     font-weight: bold;
+    margin-top: 2px;
   }
   .menu-card .card_checkicon {
     display: none;
@@ -205,8 +216,6 @@ body {
     border: 1px solid #fdfdfd;
     border-radius: 139px;
     background: #ff79da;
-    background: -moz-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
-    background: -webkit-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
     background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
   }
 }
@@ -372,4 +381,4 @@ body {
   .menu .maintitle_title {
     font-size: 1.8rem;
   }
-}
+}/*# sourceMappingURL=style.css.map */
