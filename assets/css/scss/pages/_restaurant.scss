@@ -43,11 +43,27 @@
         background-color: $background-color-grey;
      .menu_maintitle{
 @include flexbox-rowcenter;
+gap: 120px;
      }
 
      .maintitle_title{
+        font-size: $title-size;
+        font-weight: bold;
+    }
+    .maintitle_icon{
         font-size: $title-size;
     }
 }
 }
 // Fin de la partie pour le menu
+
+// Début de la section order
+
+.order{
+    padding-top: 10px;
+    padding-bottom: 80px;
+    background-color: $background-color-grey;
+}
+
+
+// Fin de la section order

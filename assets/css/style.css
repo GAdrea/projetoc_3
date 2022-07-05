@@ -154,12 +154,12 @@ body {
     background-color: #f6f6f6;
   }
   .menu-card .card_maintitle {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: normal;
     padding-left: 28px;
   }
   .menu-card .maintitle_border {
-    width: 8%;
+    width: 10%;
     border-bottom: 3px solid #99e2d0;
     margin-top: -10px;
     margin-bottom: 20px;
@@ -215,6 +215,7 @@ body {
     margin-top: 20px;
     border: 1px solid #fdfdfd;
     border-radius: 139px;
+    box-shadow: 6px 6px 24px 4px #dfdfdf;
     background: #ff79da;
     background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
   }
@@ -377,8 +378,19 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+    gap: 120px;
   }
   .menu .maintitle_title {
     font-size: 1.8rem;
+    font-weight: bold;
   }
+  .menu .maintitle_icon {
+    font-size: 1.8rem;
+  }
+}
+
+.order {
+  padding-top: 10px;
+  padding-bottom: 80px;
+  background-color: #f6f6f6;
 }/*# sourceMappingURL=style.css.map */
