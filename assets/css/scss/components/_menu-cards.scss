@@ -20,6 +20,7 @@
       flex-wrap: wrap;
       border-radius: 20px 20px 20px 20px;
       color: black;
+      background-color: white;
       text-decoration: none;
       box-shadow: 5px 5px 8px 5px #dfdfdf;
       margin-bottom: 20px;
@@ -29,12 +30,12 @@
       font-weight: bold;
       width: 100%;
       margin: 0;
-      font-size: $subtitle-size;
+      font-size: $card-title;
     }
     .card_subtitle {
-      width: 90%;
+      width: 92%;
       margin: 0;
-      font-size: $subtitle2-size;
+      font-size: $card-subtitle;
       margin-top: -15px;
     }
     .card_price {
