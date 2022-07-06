@@ -1,4 +1,17 @@
 .index-head {
+  @media screen and (min-width:$tablet) {
+    @include flexbox-columncenter;
+    .index-head__location{
+      box-shadow: inset 5px 5px 15px 5px $background-color-grey;
+      width: 100%;
+      @include flexbox-rowcenter;
+      gap: 10px;
+      background-color: $background-color-darkgrey;
+    }
+    .index-head__locationtext {
+      font-size: $card-subtitle;
+    }
+  }
   @media screen and (max-width: $smartphone) {
     @include flexbox-columncenter;
     .logo_picture {
