@@ -285,64 +285,37 @@ body {
   }
 }
 
+.index-foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #353535;
+  padding-left: 7%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+.index-foot .index-foot__logo {
+  width: 25%;
+  height: auto;
+  margin-bottom: 20px;
+  filter: invert(99%) sepia(36%) saturate(0%) hue-rotate(57deg) brightness(112%) contrast(100%);
+}
 @media screen and (min-width: 576px) {
-  .index-foot {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #353535;
-    padding-left: 7%;
-    padding-top: 8%;
-    padding-bottom: 8%;
-  }
   .index-foot .index-foot__logo {
     width: 50%;
-    height: auto;
-    margin-bottom: 20px;
-    filter: invert(99%) sepia(36%) saturate(0%) hue-rotate(57deg) brightness(112%) contrast(100%);
-  }
-  .index-foot .index-foot__link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    height: 25px;
-    font-size: 1rem;
-  }
-  .index-foot .link__icon {
-    color: white;
   }
 }
-@media screen and (max-width: 480px) {
-  .index-foot {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background-color: #353535;
-    padding-left: 7%;
-    padding-top: 8%;
-    padding-bottom: 8%;
-  }
-  .index-foot .index-foot__logo {
-    width: 25%;
-    height: auto;
-    margin-bottom: 20px;
-    filter: invert(99%) sepia(36%) saturate(0%) hue-rotate(57deg) brightness(112%) contrast(100%);
-  }
-  .index-foot .index-foot__link {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    height: 25px;
-  }
-  .index-foot .link__icon {
-    color: white;
-  }
+.index-foot .index-foot__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  height: 25px;
+}
+.index-foot .link__icon {
+  color: white;
 }
 
 @media screen and (max-width: 480px) {

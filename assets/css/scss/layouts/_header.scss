@@ -1,7 +1,7 @@
 .index-head {
-  @media screen and (min-width:$tablet) {
+  @media screen and (min-width: $tablet) {
     @include flexbox-columncenter;
-    .index-head__location{
+    .index-head__location {
       box-shadow: inset 5px 5px 15px 5px $background-color-grey;
       width: 100%;
       @include flexbox-rowcenter;
@@ -32,6 +32,19 @@
     }
   }
 }
+
+//   .index-head{
+//     &__locationtext{
+
+//     }
+//     &__location{
+
+//     }
+//     @media & {
+//       &_logo
+//     }
+//   }
+// }
 
 // exemple de configuration
 // header{
