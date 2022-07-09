@@ -1,16 +1,14 @@
+main {
+  @include flexbox-columncenter;
+}
+
 // Début de la section 1
 .section1 {
-  @media screen and (max-width: $smartphone) {
-    @include flexbox-columncenter;
-    background-color: $background-color-grey;
-    padding-top: 10px;
-    padding-bottom: 50px;
-    .section1__maintitle {
-      font-size: $title-size;
-      text-align: center;
-      font-weight: bold;
-      margin-bottom: 2px;
-    }
+  background-color: $background-color-grey;
+  .section1__maintitle {
+    font-size: $title-size;
+    text-align: center;
+    font-weight: bold;
     .section1__subtitle {
       font-size: $card-subtitle;
       text-align: center;
@@ -18,16 +16,13 @@
     }
   }
 }
-
 // Fin de la section 1
 
 // Début de la section 2
+
 .section2 {
-  @media screen and (max-width: $smartphone) {
-    @include flexbox-columncenter;
-    align-items: flex-start;
-    margin-bottom: 50px;
-    .section2__maintitle {
+  .section2__maintitle {
+    @media screen and (min-width: $smartphone) {
       margin-left: 20px;
     }
   }
@@ -38,15 +33,68 @@
 // Début de la section 3
 
 .section3 {
-  @media screen and (max-width: $smartphone) {
-    @include flexbox-columncenter;
-    background-color: $background-color-grey;
-    margin-bottom: 10px;
-    .resto-prev__maintitle {
+  .resto-prev__maintitle {
+    @media screen and (min-width: $smartphone) {
       position: relative;
       right: 105px;
     }
   }
 }
+
+// Fin de la section 3
+
+// Code répliqué selon la structure CSS classique. Pas du tout adapté à une structure SCSS. Code répétitif
+// Tout le code qui suit ne doit plus se reproduire
+
+// Début de la section 1
+// .section1 {
+//   @media screen and (max-width: $smartphone) {
+//     @include flexbox-columncenter;
+//     background-color: $background-color-grey;
+//     padding-top: 10px;
+//     padding-bottom: 50px;
+//     .section1__maintitle {
+//       font-size: $title-size;
+//       text-align: center;
+//       font-weight: bold;
+//       margin-bottom: 2px;
+//     }
+//     .section1__subtitle {
+//       font-size: $card-subtitle;
+//       text-align: center;
+//       font-weight: normal;
+//     }
+//   }
+// }
+
+// Fin de la section 1
+
+// Début de la section 2
+// .section2 {
+//   @media screen and (max-width: $smartphone) {
+//     @include flexbox-columncenter;
+//     align-items: flex-start;
+//     margin-bottom: 50px;
+//     .section2__maintitle {
+//       margin-left: 20px;
+//     }
+//   }
+// }
+
+// Fin de la section 2
+
+// Début de la section 3
+
+// .section3 {
+//   @media screen and (max-width: $smartphone) {
+//     @include flexbox-columncenter;
+//     background-color: $background-color-grey;
+//     margin-bottom: 10px;
+//     .resto-prev__maintitle {
+//       position: relative;
+//       right: 105px;
+//     }
+//   }
+// }
 
 // Fin de la section 3
