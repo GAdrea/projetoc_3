@@ -1,24 +1,28 @@
-.index-head{
+.index-head {
   @include flexbox-columncenter;
-  .index-head__location{
-          box-shadow: inset 5px 5px 15px 5px $background-color-grey;
-      width: 100%;
-      @include flexbox-rowcenter;
-      gap: 10px;
-      background-color: $background-color-darkgrey;
+  .index-head__location {
+    box-shadow: inset 5px 5px 15px 5px $background-color-grey;
+    width: 100%;
+    @include flexbox-rowcenter;
+    gap: 10px;
+    background-color: $background-color-darkgrey;
   }
-      .index-head__locationtext {
-      font-size: $card-subtitle;
+  .index-head__locationtext {
+    font-size: $card-subtitle;
+    @media screen and (min-width: $tablet) {
+      font-size: $title-size;
     }
-    .logo_picture {
-            height: auto;
-            width: 50%;
-            @include flexbox-rowcenter;
-            padding: 15px;
-          }
+  }
+  .logo_picture {
+    height: auto;
+    width: 50%;
+    @include flexbox-rowcenter;
+    padding: 15px;
+    @media screen and (min-width: $tablet) {
+      width: 100%;
+    }
+  }
 }
-
-
 
 // Code à réviser
 // .index-head {

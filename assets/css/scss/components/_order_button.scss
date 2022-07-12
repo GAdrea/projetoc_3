@@ -1,28 +1,28 @@
 .order_button {
-    @media screen and (max-width: $smartphone) {
-        @include flexbox-rowcenter;
-      width: 60%;
-      height: 58px;
-      color: white;
-      font-size: $buttontitle-size;
-      font-weight: bold;
-      margin-top: 20px;
-      border: 1px solid #fdfdfd;
-      border-radius: 139px;
-      box-shadow: 6px 6px 24px 4px #dfdfdf;
-      background: #ff79da;
-      background: -moz-linear-gradient(
-        -45deg,
-        #ff79da 0%,
-        #ff79da 16%,
-        #9356dc 100%
-      );
-      background: -webkit-linear-gradient(
-        -45deg,
-        #ff79da 0%,
-        #ff79da 16%,
-        #9356dc 100%
-      );
-      background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
-    }
+  @media screen and (max-width: $smartphone) {
+    @include flexbox-rowcenter;
+    width: 60%;
+    height: 58px;
+    color: white;
+    font-size: $buttontitle-size;
+    font-weight: bold;
+    margin-top: 20px;
+    border: 1px solid #fdfdfd;
+    border-radius: 139px;
+    box-shadow: $boxshadow-standard;
+    background: #ff79da;
+    background: -moz-linear-gradient(
+      -45deg,
+      #ff79da 0%,
+      #ff79da 16%,
+      #9356dc 100%
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      #ff79da 0%,
+      #ff79da 16%,
+      #9356dc 100%
+    );
+    background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
   }
+}

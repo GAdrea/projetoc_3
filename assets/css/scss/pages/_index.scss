@@ -4,17 +4,18 @@ main {
 
 // Début de la section 1
 .section1 {
+  width: 100%;
   background-color: $background-color-grey;
   .section1__maintitle {
     font-size: $title-size;
     text-align: center;
     font-weight: bold;
   }
-    .section1__subtitle {
-      font-size: $card-subtitle;
-      text-align: center;
-      font-weight: normal;
-    }
+  .section1__subtitle {
+    font-size: $card-subtitle;
+    text-align: center;
+    font-weight: normal;
+  }
 }
 // Fin de la section 1
 
@@ -22,9 +23,11 @@ main {
 
 .section2 {
   width: 100%;
+  @media screen and (min-width: $tablet) {
+    width: 90%;
+  }
   .section2__maintitle {
-      margin-left: 20px;
-    
+    margin-left: 20px;
   }
 }
 
@@ -32,7 +35,21 @@ main {
 
 // Début de la section 3
 
+.section3 {
+  width: 90%;
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
 
+.resto-prev__maintitle {
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+  }
+}
 
 // Fin de la section 3
 

@@ -4,14 +4,17 @@
   padding-left: 7%;
   padding-top: 8%;
   padding-bottom: 8%;
+  @media screen and (min-width: $tablet) {
+    @include flexbox-columncenter;
+  }
   .index-foot__logo {
     width: 25%;
     height: auto;
     margin-bottom: 20px;
     filter: invert(99%) sepia(36%) saturate(0%) hue-rotate(57deg)
       brightness(112%) contrast(100%);
-    @media screen and (min-width:$tablet) {
-        width: 50%;
+    @media screen and (min-width: $tablet) {
+      width: 50%;
     }
   }
   .index-foot__link {
@@ -19,9 +22,12 @@
     align-items: center;
     gap: 10px;
     height: 25px;
+    @media screen and (min-width: $tablet) {
+      font-size: $title2-size;
+      height: 50px;
+    }
   }
   .link__icon {
     color: white;
   }
-  
 }

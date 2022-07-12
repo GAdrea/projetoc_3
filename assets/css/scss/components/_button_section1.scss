@@ -1,14 +1,18 @@
 .section1__searchbutton {
   @include flexbox-rowcenter;
-    width: 60%;
-    height: 58px;
-    color: white;
-    font-size: $buttontitle-size;
-    font-weight: bold;
-    margin-top: 25px;
-    margin-bottom: 40px;
-    border: 1px solid #fdfdfd;
-    border-radius: 139px;
-    background: #ff79da;
-    background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
+  width: 60%;
+  height: 58px;
+  color: white;
+  font-size: $buttontitle-size;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  border: 1px solid #fdfdfd;
+  border-radius: 139px;
+  box-shadow: $boxshadow-standard;
+  background: #ff79da;
+  background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
+  @media screen and (min-width: $tablet) {
+    width: 40%;
+  }
 }
