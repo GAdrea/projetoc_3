@@ -1,5 +1,4 @@
 .section2__card {
-  @media screen and (max-width: $smartphone) {
     @include flexbox-rowcenter;
     text-decoration: none;
     color: black;
@@ -12,8 +11,7 @@
     .section2__number {
       @include flexbox-rowcenter;
       position: absolute;
-      left: 10px;
-      margin: 0;
+      left: 15px;
       width: 25px;
       height: 25px;
       color: white;
@@ -30,5 +28,4 @@
       font-size: $card-subtitle;
       font-weight: bold;
     }
-  }
 }

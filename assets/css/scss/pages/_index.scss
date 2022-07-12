@@ -9,22 +9,22 @@ main {
     font-size: $title-size;
     text-align: center;
     font-weight: bold;
+  }
     .section1__subtitle {
       font-size: $card-subtitle;
       text-align: center;
       font-weight: normal;
     }
-  }
 }
 // Fin de la section 1
 
 // Début de la section 2
 
 .section2 {
+  width: 100%;
   .section2__maintitle {
-    @media screen and (min-width: $smartphone) {
       margin-left: 20px;
-    }
+    
   }
 }
 

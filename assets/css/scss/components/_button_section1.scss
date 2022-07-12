@@ -1,26 +1,14 @@
 .section1__searchbutton {
-  @media screen and (max-width: $smartphone) {
+  @include flexbox-rowcenter;
     width: 60%;
     height: 58px;
     color: white;
-    font-size: $subtitle2-size;
+    font-size: $buttontitle-size;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 40px;
     border: 1px solid #fdfdfd;
     border-radius: 139px;
     background: #ff79da;
-    background: -moz-linear-gradient(
-      -45deg,
-      #ff79da 0%,
-      #ff79da 16%,
-      #9356dc 100%
-    );
-    background: -webkit-linear-gradient(
-      -45deg,
-      #ff79da 0%,
-      #ff79da 16%,
-      #9356dc 100%
-    );
     background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
-  }
 }
