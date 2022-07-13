@@ -8,6 +8,7 @@
   box-shadow: $boxshadow-standard;
   @media screen and (min-width: $tablet) {
     width: 48%;
+    box-shadow: none;
   }
   .resto-prev__cardlink {
     color: black;

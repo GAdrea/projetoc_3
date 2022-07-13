@@ -30,7 +30,8 @@ p {
 }
 
 img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body {
@@ -135,6 +136,7 @@ body {
 @media screen and (min-width: 576px) {
   .resto-prev__card {
     width: 48%;
+    box-shadow: none;
   }
 }
 .resto-prev__card .resto-prev__cardlink {
@@ -266,8 +268,6 @@ body {
     border-radius: 139px;
     box-shadow: 8px 10px 20px 7px rgba(223, 223, 223, 0.86);
     background: #ff79da;
-    background: -moz-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
-    background: -webkit-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
     background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
   }
 }
@@ -406,7 +406,9 @@ main {
 
 @media screen and (min-width: 576px) {
   .resto-prev__maintitle {
-    width: 100%;
+    width: 86%;
+    margin-top: 105px;
+    margin-bottom: -7px;
   }
 }
 
@@ -465,4 +467,4 @@ main {
   padding-top: 10px;
   padding-bottom: 80px;
   background-color: #f6f6f6;
-}
+}/*# sourceMappingURL=style.css.map */

@@ -47,7 +47,9 @@ main {
 
 .resto-prev__maintitle {
   @media screen and (min-width: $tablet) {
-    width: 100%;
+    width: 86%;
+    margin-top: 105px;
+    margin-bottom: -7px;
   }
 }
 
