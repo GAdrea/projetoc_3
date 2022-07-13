@@ -1,5 +1,8 @@
 .index-head {
   @include flexbox-columncenter;
+  @media screen and (min-width:$desktop) {
+  @include flexbox-spacearound;
+  }
   .index-head__location {
     box-shadow: inset 5px 5px 15px 5px $background-color-grey;
     width: 100%;

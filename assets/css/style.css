@@ -278,6 +278,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 992px) {
+  .index-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .index-head .index-head__location {
   box-shadow: inset 5px 5px 15px 5px #f6f6f6;
   width: 100%;
