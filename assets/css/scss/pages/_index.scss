@@ -1,59 +1,62 @@
 main {
   @include flexbox-columncenter;
-}
-
-// Début de la section 1
-.section1 {
-  width: 100%;
-  background-color: $background-color-grey;
-  .section1__maintitle {
-    font-size: $title-size;
-    text-align: center;
-    font-weight: bold;
-  }
-  .section1__subtitle {
-    font-size: $card-subtitle;
-    text-align: center;
-    font-weight: normal;
-  }
-}
-// Fin de la section 1
-
-// Début de la section 2
-
-.section2 {
-  width: 100%;
-  @media screen and (min-width: $tablet) {
-    width: 90%;
-  }
-  .section2__maintitle {
-    margin-left: 20px;
-  }
-}
-
-// Fin de la section 2
-
-// Début de la section 3
-
-.section3 {
-  width: 90%;
-  @media screen and (min-width: $tablet) {
+  .section1 {
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    background-color: $background-color-grey;
+    .section1__maintitle {
+      font-size: $title-size;
+      text-align: center;
+      font-weight: bold;
+    }
+    .section1__subtitle {
+      font-size: $card-subtitle;
+      text-align: center;
+      font-weight: normal;
+    }
+  }
+  .section2 {
+    width: 100%;
+    @media screen and (min-width: $tablet) {
+      width: 90%;
+    }
+    @media screen and (min-width: $desktop) {
+      @include flexbox-spacearound;
+      padding-top: 80px;
+      flex-wrap: wrap;
+    }
+    .section2__maintitle {
+      margin-left: 20px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 100%;
+      @include flexbox-rowcenter;
+      font-size: $title2-size;
+      text-align: center;
+    }
+  }
+  .section3 {
+    width: 90%;
+    @media screen and (min-width: $tablet) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .resto-prev__maintitle {
+      @media screen and (min-width: $tablet) {
+        width: 86%;
+        margin-top: 105px;
+        margin-bottom: -7px;
+      }
+      @media screen and (min-width: $desktop) {
+        @include flexbox-rowcenter;
+        font-size: $title2-size;
+        text-align: center;
+        margin-top: 90px;
+      }
+    }
   }
 }
-
-.resto-prev__maintitle {
-  @media screen and (min-width: $tablet) {
-    width: 86%;
-    margin-top: 105px;
-    margin-bottom: -7px;
-  }
-}
-
-// Fin de la section 3
 
 // Code répliqué selon la structure CSS classique. Pas du tout adapté à une structure SCSS. Code répétitif
 // Tout le code qui suit ne doit plus se reproduire

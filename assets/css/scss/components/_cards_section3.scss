@@ -10,6 +10,10 @@
     width: 48%;
     box-shadow: none;
   }
+  @media screen and (min-width: $desktop) {
+    width: 40%;
+  }
+
   .resto-prev__cardlink {
     color: black;
   }

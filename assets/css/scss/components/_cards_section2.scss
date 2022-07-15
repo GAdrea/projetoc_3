@@ -11,6 +11,11 @@
   @media screen and (min-width: $tablet) {
     width: 80%;
   }
+  @media screen and (min-width: $desktop) {
+    @include flexbox-rowcenter;
+    width: 25%;
+    min-width: 25%;
+  }
   .section2__number {
     @include flexbox-rowcenter;
     position: absolute;
@@ -24,6 +29,10 @@
     @media screen and (min-width: $tablet) {
       left: 12%;
     }
+    @media screen and (min-width: $desktop) {
+      position: relative;
+      left: -15%;
+    }
   }
   .section2__icon {
     color: rgba(0, 0, 0, 0.506);
@@ -32,12 +41,20 @@
     @media screen and (min-width: $tablet) {
       left: 25%;
     }
+    @media screen and (min-width: $desktop) {
+      position: relative;
+      left: -20%;
+    }
   }
   .section2__text {
     font-size: $card-subtitle;
     font-weight: bold;
     @media screen and (min-width: $tablet) {
       font-size: $title2-size;
+    }
+    @media screen and (min-width: $desktop) {
+      position: relative;
+      left: -10%;
     }
   }
 }

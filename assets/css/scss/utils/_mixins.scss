@@ -24,8 +24,8 @@
 @mixin flexbox-columnstart {
   display: flex;
   flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 @mixin flexbox-spacebetween {
@@ -42,7 +42,6 @@ align-items: flex-start;
 }
 
 // Fin de la mixin pour la mise en page
-
 
 //---------------------------Les mauvaises idées---------------------------------
 
