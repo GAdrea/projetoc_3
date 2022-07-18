@@ -1,10 +1,14 @@
 @font-face {
   font-family: Shrikhand;
-  src: url(../../../fonts/Shrikhand/Shrikhand-Regular.ttf);
+  src: url(../../../fonts/Shrikhand/Shrikhand-Regular.ttf) format(truetype);
+  src: url(../../../fonts/Shrikhand/shrikhand-regular-webfont.woff) format(woff);
+  src: url(../../../fonts/Shrikhand/shrikhand-regular-webfont.woff2) format(woff2);
 }
 @font-face {
   font-family: Roboto;
-  src: url(../../../fonts/Roboto/Roboto-Regular.ttf);
+  src: url(../../../fonts/Roboto/Roboto-Regular.ttf) format(truetype);
+  src: url(../../../fonts/Roboto/roboto-regular-webfont.woff);
+  src: url(../../../fonts/Roboto/roboto-regular-webfont.woff2);
 }
 * {
   scroll-behavior: smooth;
@@ -97,7 +101,9 @@ body {
     align-items: center;
     margin: auto;
     width: 25%;
-    min-width: 25%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 .section2__card .section2__number {
@@ -441,17 +447,20 @@ main .section2 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-top: 80px;
+    height: 350px;
   }
 }
 main .section2 .section2__maintitle {
   margin-left: 20px;
 }
 @media screen and (min-width: 992px) {
-  main .section2 {
-    width: 100%;
+  main .section2 .section2__maintitle {
     font-size: 1.5rem;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
   }
 }
 main .section3 {
