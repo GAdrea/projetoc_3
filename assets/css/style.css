@@ -13,7 +13,8 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: Shrikhand;
 }
 
@@ -40,6 +41,7 @@ body {
 
 .section1__searchbutton {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -69,6 +71,7 @@ body {
 
 .section2__card {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -89,6 +92,7 @@ body {
 @media screen and (min-width: 992px) {
   .section2__card {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -98,6 +102,7 @@ body {
 }
 .section2__card .section2__number {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -254,6 +259,7 @@ body {
   }
   .menu-card .card {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -292,6 +298,7 @@ body {
 @media screen and (max-width: 480px) {
   .order_button {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -321,6 +328,7 @@ body {
   box-shadow: inset 5px 5px 15px 5px #f6f6f6;
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -339,6 +347,7 @@ body {
   height: auto;
   width: 50%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -427,12 +436,12 @@ main .section2 {
 }
 @media screen and (min-width: 992px) {
   main .section2 {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding-top: 80px;
-    flex-wrap: wrap;
   }
 }
 main .section2 .section2__maintitle {
@@ -441,10 +450,6 @@ main .section2 .section2__maintitle {
 @media screen and (min-width: 992px) {
   main .section2 {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
     font-size: 1.5rem;
     text-align: center;
   }
@@ -470,6 +475,7 @@ main .section3 {
 @media screen and (min-width: 992px) {
   main .section3 .resto-prev__maintitle {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -482,6 +488,7 @@ main .section3 {
 @media screen and (max-width: 480px) {
   .page-head .page-head_nav {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -516,6 +523,7 @@ main .section3 {
   }
   .menu .menu_maintitle {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: auto;

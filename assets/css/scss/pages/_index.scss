@@ -20,16 +20,15 @@ main {
       width: 90%;
     }
     @media screen and (min-width: $desktop) {
+      width: 100%;
       @include flexbox-spacearound;
       padding-top: 80px;
-      flex-wrap: wrap;
     }
     .section2__maintitle {
       margin-left: 20px;
     }
     @media screen and (min-width: $desktop) {
       width: 100%;
-      @include flexbox-rowcenter;
       font-size: $title2-size;
       text-align: center;
     }

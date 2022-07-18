@@ -1,6 +1,7 @@
 // Mixin pour la mise en page
 @mixin flexbox-rowcenter {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -42,6 +43,89 @@
 }
 
 // Fin de la mixin pour la mise en page
+
+// Mixins pratiques trouvées sur le net
+
+// Ellipse
+@mixin text-shorten {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Fin de l'ellipse
+
+// Mixin pour les points de rupture
+
+@mixin respond-above($breakpoint) {
+  // If the breakpoint exists in the map.
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+    // Write the media query.
+    @media (min-width: $breakpoint-value) {
+      @content;
+    }
+    // If the breakpoint doesn't exist in the map.
+  } @else {
+    // Log a warning.
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+// Autre mixin
+
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media only screen and (min-width: 1366px) {
+      @content;
+    }
+  } @else if $point == desktop {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media only screen and (min-width: 600px) {
+      @content;
+    }
+  }
+}
+
+// Fin
+
+// Fin des points de rupture
+
+// Ratio responsive
+
+@mixin responsive-ratio($x, $y, $pseudo: false) {
+  $padding: unquote(($y / $x) * 100 + "%");
+  @if $pseudo {
+    &:before {
+      @include pseudo($pos: relative);
+      width: 100%;
+      padding-top: $padding;
+    }
+  } @else {
+    padding-top: $padding;
+  }
+}
+
+// Fin du ratio responsive
+
+// Positionnement
+
+@mixin abs-position($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+// Pour utiliser cette mixin, il suffit d'ajouter les valeurs dans la zone entre paretnhèses
+
+// Fin Positionnement
+
+// Fin des mixins sur le net
 
 //---------------------------Les mauvaises idées---------------------------------
 

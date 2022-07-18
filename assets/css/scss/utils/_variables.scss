@@ -4,6 +4,17 @@ $tablet: 576px;
 $tabletBig: 800px;
 $desktop: 992px;
 
+// Map
+$breakpoint: (
+    "xs": 400px,
+    "sm":544px,
+    "md":768px,
+    "lg":960px,
+    "xl":1280px,
+    "xxl":1440px,
+);
+// Fin de la map
+
 // Fin des variables pour les breakpoints
 
 // Variables pour les couleurs
