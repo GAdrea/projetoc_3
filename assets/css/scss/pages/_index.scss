@@ -23,12 +23,19 @@ main {
       width: 100%;
       @include flexbox-spacearound;
       height: 350px;
+      flex-wrap: wrap;
     }
     .section2__maintitle {
       margin-left: 20px;
+      @media screen and (min-width: $tablet) {
+        text-align: center;
+      }
       @media screen and (min-width: $desktop) {
+        width: 100%;
         font-size: $title2-size;
         @include flexbox-rowcenter;
+        margin-top: 0;
+        margin-bottom: 0;
       }
     }
   }
@@ -39,17 +46,22 @@ main {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      margin-bottom: 85px;
+    }
+    @media screen and (min-width: $desktop) {
+      @include flexbox-spacearound;
     }
     .resto-prev__maintitle {
       @media screen and (min-width: $tablet) {
         width: 86%;
         margin-top: 105px;
         margin-bottom: -7px;
+        text-align: center;
+        margin-left: 55px;
       }
       @media screen and (min-width: $desktop) {
         @include flexbox-rowcenter;
         font-size: $title2-size;
-        text-align: center;
         margin-top: 90px;
       }
     }

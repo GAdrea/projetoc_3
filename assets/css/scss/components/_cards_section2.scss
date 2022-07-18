@@ -13,7 +13,7 @@
   }
   @media screen and (min-width: $desktop) {
     @include flexbox-rowcenter;
-    width: 25%;
+    width: 28%;
     margin: auto;
     margin-top: 0;
     margin-bottom: 0;
@@ -33,7 +33,7 @@
     }
     @media screen and (min-width: $desktop) {
       position: relative;
-      left: -15%;
+      left: -11%;
     }
   }
   .section2__icon {
@@ -45,7 +45,7 @@
     }
     @media screen and (min-width: $desktop) {
       position: relative;
-      left: -20%;
+      left: -14%;
     }
   }
   .section2__text {

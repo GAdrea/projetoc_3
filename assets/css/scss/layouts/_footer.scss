@@ -7,6 +7,11 @@
   @media screen and (min-width: $tablet) {
     @include flexbox-columncenter;
   }
+  @media screen and (min-width: $desktop) {
+    @include flexbox-rowcenter;
+    width: 100%;
+    flex-wrap: wrap;
+  }
   .index-foot__logo {
     width: 25%;
     height: auto;
@@ -15,6 +20,9 @@
       brightness(112%) contrast(100%);
     @media screen and (min-width: $tablet) {
       width: 50%;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 76%;
     }
   }
   .index-foot__link {
@@ -25,6 +33,10 @@
     @media screen and (min-width: $tablet) {
       font-size: $title2-size;
       height: 50px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 25%;
+      @include flexbox-rowcenter;
     }
   }
   .link__icon {
