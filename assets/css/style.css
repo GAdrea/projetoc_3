@@ -35,7 +35,8 @@ p {
 }
 
 img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body {
@@ -129,7 +130,8 @@ body {
 @media screen and (min-width: 992px) {
   .section2__card .section2__number {
     position: relative;
-    left: -11%;
+    left: -27%;
+    margin: 0;
   }
 }
 .section2__card .section2__icon {
@@ -145,7 +147,7 @@ body {
 @media screen and (min-width: 992px) {
   .section2__card .section2__icon {
     position: relative;
-    left: -14%;
+    left: -18%;
   }
 }
 .section2__card .section2__text {
@@ -230,10 +232,20 @@ body {
   width: 70%;
   font-weight: bold;
 }
+@media screen and (min-width: 576px) {
+  .resto-prev__card .description__title {
+    width: auto;
+  }
+}
 .resto-prev__card .description__subtitle {
   width: 60%;
   margin-top: -15px;
   font-weight: normal;
+}
+@media screen and (min-width: 992px) {
+  .resto-prev__card .description__subtitle {
+    width: 100%;
+  }
 }
 .resto-prev__card .description__hearticon {
   font-size: 30px;
@@ -245,6 +257,12 @@ body {
     position: relative;
     bottom: 75%;
     left: 25%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .resto-prev__card .description__hearticon {
+    left: 82%;
+    bottom: 99%;
   }
 }
 
@@ -319,8 +337,6 @@ body {
     border-radius: 139px;
     box-shadow: 8px 10px 20px 7px rgba(223, 223, 223, 0.86);
     background: #ff79da;
-    background: -moz-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
-    background: -webkit-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
     background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
   }
 }
@@ -504,7 +520,7 @@ main .section3 {
 }
 @media screen and (min-width: 576px) {
   main .section3 {
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -597,4 +613,4 @@ main .section3 {
   padding-top: 10px;
   padding-bottom: 80px;
   background-color: #f6f6f6;
-}
+}/*# sourceMappingURL=style.css.map */
