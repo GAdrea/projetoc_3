@@ -37,6 +37,7 @@
     @media screen and (min-width: $desktop) {
       width: 25%;
       @include flexbox-rowcenter;
+      font-size: $title-size;
     }
   }
   .link__icon {

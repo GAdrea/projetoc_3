@@ -187,7 +187,7 @@ body {
 }
 @media screen and (min-width: 992px) {
   .resto-prev__card {
-    width: 22%;
+    width: 40%;
   }
 }
 .resto-prev__card .resto-prev__cardlink {
@@ -449,6 +449,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+    font-size: 1.8rem;
   }
 }
 .index-foot .link__icon {
@@ -553,6 +554,7 @@ main .section3 {
     margin: auto;
     font-size: 1.5rem;
     margin-top: 90px;
+    font-size: 1.8rem;
   }
 }
 
