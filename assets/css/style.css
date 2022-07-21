@@ -29,8 +29,8 @@ a {
 
 p {
   font-family: Roboto;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
@@ -265,81 +265,124 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+.menu-card {
+  background-color: #f6f6f6;
+}
+@media screen and (min-width: 576px) {
   .menu-card {
-    background-color: #f6f6f6;
-  }
-  .menu-card .card_maintitle {
-    font-size: 1.5rem;
-    font-weight: normal;
-    padding-left: 28px;
-  }
-  .menu-card .maintitle_border {
-    width: 10%;
-    border-bottom: 3px solid #99e2d0;
-    margin-top: -10px;
-    margin-bottom: 20px;
-    margin-left: 28px;
-  }
-  .menu-card .card {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 90%;
-    height: 70px;
+    justify-content: space-between;
+    align-items: stretch;
     flex-wrap: wrap;
-    border-radius: 20px 20px 20px 20px;
-    color: black;
-    background-color: white;
-    text-decoration: none;
-    box-shadow: 5px 5px 8px 5px #dfdfdf;
-    margin-bottom: 20px;
-    padding: 15px;
-  }
-  .menu-card .card_title {
-    font-weight: bold;
-    width: 100%;
-    margin: 0;
-    font-size: 1.3rem;
-  }
-  .menu-card .card_subtitle {
-    width: 92%;
-    margin: 0;
-    font-size: 1.1rem;
-    margin-top: -15px;
-  }
-  .menu-card .card_price {
-    font-weight: bold;
-    margin-top: 2px;
-  }
-  .menu-card .card_checkicon {
-    display: none;
   }
 }
-
-@media screen and (max-width: 480px) {
-  .order_button {
+.menu-card .card_maintitle {
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding-left: 28px;
+}
+@media screen and (min-width: 576px) {
+  .menu-card .card_maintitle {
+    text-align: center;
+    width: 100%;
+  }
+}
+.menu-card .maintitle_border {
+  width: 10%;
+  border-bottom: 3px solid #99e2d0;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  margin-left: 28px;
+}
+@media screen and (min-width: 576px) {
+  .menu-card .maintitle_border {
+    width: 100%;
+  }
+}
+.menu-card .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  height: 70px;
+  flex-wrap: wrap;
+  border-radius: 20px 20px 20px 20px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  box-shadow: 5px 5px 8px 5px #dfdfdf;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+@media screen and (min-width: 576px) {
+  .menu-card .card {
+    width: 30%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    width: 60%;
-    height: 58px;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 20px;
-    border: 1px solid #fdfdfd;
-    border-radius: 139px;
-    box-shadow: 8px 10px 20px 7px rgba(223, 223, 223, 0.86);
-    background: #ff79da;
-    background: -moz-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
-    background: -webkit-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
-    background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
+    flex-wrap: wrap;
+    height: 150px;
   }
+}
+.menu-card .card_title {
+  font-weight: bold;
+  width: 100%;
+  margin: 0;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 576px) {
+  .menu-card .card_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+}
+.menu-card .card_subtitle {
+  width: 92%;
+  margin: 0;
+  font-size: 1.1rem;
+  margin-top: -15px;
+}
+@media screen and (min-width: 576px) {
+  .menu-card .card_subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.menu-card .card_price {
+  font-weight: bold;
+  margin-top: 2px;
+}
+.menu-card .card_checkicon {
+  display: none;
+}
+
+.order_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 60%;
+  height: 58px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  border: 1px solid #fdfdfd;
+  border-radius: 139px;
+  box-shadow: 8px 10px 20px 7px rgba(223, 223, 223, 0.86);
+  background: #ff79da;
+  background: -moz-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
+  background: -webkit-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
+  background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
 }
 
 .index-head {
@@ -559,56 +602,68 @@ main .section3 {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .page-head .page-head_nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .page-head .page-head_returnlink {
-    font-size: 1.8rem;
-    position: absolute;
-    left: 4%;
-  }
-  .page-head .page-head_logo {
-    width: 50%;
-    height: auto;
-  }
+.page-head .page-head_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.page-head .page-head_returnlink {
+  font-size: 1.8rem;
+  position: absolute;
+  left: 4%;
+}
+.page-head .page-head_logo {
+  width: 50%;
+  height: auto;
 }
 
-@media screen and (max-width: 480px) {
-  .picture {
-    width: 100%;
-    height: auto;
-  }
+.picture {
+  width: 100%;
+  height: auto;
 }
 
-@media screen and (max-width: 480px) {
-  .menu {
-    width: 100%;
-    position: relative;
-    margin-top: -60px;
-    border-radius: 50px 50px 0px 0px;
-    background-color: #f6f6f6;
-  }
+.menu {
+  width: 100%;
+  position: relative;
+  margin-top: -60px;
+  border-radius: 50px 50px 0px 0px;
+  background-color: #f6f6f6;
+}
+.menu .menu_maintitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 120px;
+}
+@media screen and (min-width: 576px) {
   .menu .menu_maintitle {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    gap: 120px;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 0;
   }
+}
+.menu .maintitle_title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 576px) {
   .menu .maintitle_title {
-    font-size: 1.8rem;
-    font-weight: bold;
+    width: 100%;
   }
+}
+.menu .maintitle_icon {
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 576px) {
   .menu .maintitle_icon {
-    font-size: 1.8rem;
+    width: 100%;
   }
 }
 

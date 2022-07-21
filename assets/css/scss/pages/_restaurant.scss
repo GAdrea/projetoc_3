@@ -1,69 +1,74 @@
-// Partie pour le header 
+// Partie pour le header
 
-.page-head{
-    @media screen and (max-width:$smartphone) {
-        .page-head_nav{
-            @include flexbox-rowcenter;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .page-head_returnlink{
-            font-size: $title-size;
-            position: absolute;
-            left: 4%;
-        }
-        .page-head_logo{
-            width: 50%;
-            height: auto;
-        }
-    }
+.page-head {
+  .page-head_nav {
+    @include flexbox-rowcenter;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .page-head_returnlink {
+    font-size: $title-size;
+    position: absolute;
+    left: 4%;
+  }
+  .page-head_logo {
+    width: 50%;
+    height: auto;
+  }
 }
 
-// Fin de la partie pour le header 
+// Fin de la partie pour le header
 
 // Partie pour l'image
 
-.picture{
-    @media screen and (max-width:$smartphone){
-        width: 100%;
-        height: auto;
-    }
+.picture {
+  width: 100%;
+  height: auto;
 }
 
 // Fin de la partie pour l'image
 
 // Partie pour le menu
 
-.menu{
-    @media screen and (max-width:$smartphone) {
-        width: 100%;
-        position: relative;
-        margin-top: -60px;
-        border-radius: 50px 50px 0px 0px;
-        background-color: $background-color-grey;
-     .menu_maintitle{
-@include flexbox-rowcenter;
-gap: 120px;
-     }
+.menu {
+  width: 100%;
+  position: relative;
+  margin-top: -60px;
+  border-radius: 50px 50px 0px 0px;
+  background-color: $background-color-grey;
+  .menu_maintitle {
+    @include flexbox-rowcenter;
+    gap: 120px;
+    @media screen and (min-width: $tablet) {
+      width: 100%;
+      flex-wrap: wrap;
+      text-align: center;
+      gap: 0;
+    }
+  }
 
-     .maintitle_title{
-        font-size: $title-size;
-        font-weight: bold;
+  .maintitle_title {
+    font-size: $title-size;
+    font-weight: bold;
+    @media screen and (min-width: $tablet) {
+      width: 100%;
     }
-    .maintitle_icon{
-        font-size: $title-size;
+  }
+  .maintitle_icon {
+    font-size: $title-size;
+    @media screen and (min-width: $tablet) {
+      width: 100%;
     }
-}
+  }
 }
 // Fin de la partie pour le menu
 
 // Début de la section order
 
-.order{
-    padding-top: 10px;
-    padding-bottom: 80px;
-    background-color: $background-color-grey;
+.order {
+  padding-top: 10px;
+  padding-bottom: 80px;
+  background-color: $background-color-grey;
 }
-
 
 // Fin de la section order
