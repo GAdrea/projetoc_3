@@ -233,7 +233,7 @@ body {
 }
 @media screen and (min-width: 576px) {
   .resto-prev__card .description__title {
-    width: auto;
+    width: 100%;
   }
 }
 .resto-prev__card .description__subtitle {
@@ -668,6 +668,7 @@ main .section3 {
 }
 
 .order {
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 80px;
   background-color: #f6f6f6;

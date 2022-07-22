@@ -17,8 +17,7 @@
 
   .resto-prev__cardlink {
     color: black;
-    @media screen and (min-width: $desktop){
-      
+    @media screen and (min-width: $desktop) {
     }
   }
   .card--new {
@@ -55,15 +54,15 @@
   .description__title {
     width: 70%;
     font-weight: bold;
-    @media screen and (min-width: $tablet){
-      width: auto;
+    @media screen and (min-width: $tablet) {
+      width: 100%;
     }
   }
   .description__subtitle {
     width: 60%;
     margin-top: -15px;
     font-weight: normal;
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $desktop) {
       width: 100%;
     }
   }
@@ -76,7 +75,7 @@
       bottom: 75%;
       left: 25%;
     }
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $desktop) {
       left: 82%;
       bottom: 99%;
     }
