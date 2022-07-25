@@ -8,8 +8,10 @@
   box-shadow: $boxshadow-standard;
   @media screen and (min-width: $tablet) {
     width: 48%;
-    height: 345px;
-    box-shadow: none;
+    height: 320px;
+    position: relative;
+    margin-top: 50px;
+
   }
   @media screen and (min-width: $desktop) {
     width: 40%;
@@ -32,9 +34,9 @@
     background-color: #99e2d0;
     padding: 5px 10px;
     @media screen and (min-width: $tablet) {
-      position: relative;
+      position: absolute;
       left: 70%;
-      top: 15%;
+      top: 5%;
     }
   }
   .card__picture {

@@ -91,6 +91,7 @@ body {
 @media screen and (min-width: 576px) {
   .section2__card {
     width: 80%;
+    position: relative;
   }
 }
 @media screen and (min-width: 992px) {
@@ -100,6 +101,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+    position: relative;
     width: 28%;
     margin: auto;
     margin-top: 0;
@@ -123,13 +125,14 @@ body {
 }
 @media screen and (min-width: 576px) {
   .section2__card .section2__number {
+    position: absolute;
     left: 12%;
   }
 }
 @media screen and (min-width: 992px) {
   .section2__card .section2__number {
-    position: relative;
-    left: -24%;
+    position: absolute;
+    left: -2%;
     margin: 0;
   }
 }
@@ -140,13 +143,14 @@ body {
 }
 @media screen and (min-width: 576px) {
   .section2__card .section2__icon {
+    position: absolute;
     left: 25%;
   }
 }
 @media screen and (min-width: 992px) {
   .section2__card .section2__icon {
-    position: relative;
-    left: -18%;
+    position: absolute;
+    left: 8%;
   }
 }
 .section2__card .section2__text {
@@ -160,8 +164,8 @@ body {
 }
 @media screen and (min-width: 992px) {
   .section2__card .section2__text {
-    position: relative;
-    left: -10%;
+    position: absolute;
+    left: 15%;
   }
 }
 
@@ -180,8 +184,9 @@ body {
 @media screen and (min-width: 576px) {
   .resto-prev__card {
     width: 48%;
-    height: 345px;
-    box-shadow: none;
+    height: 320px;
+    position: relative;
+    margin-top: 50px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -206,9 +211,9 @@ body {
 }
 @media screen and (min-width: 576px) {
   .resto-prev__card .card--new {
-    position: relative;
+    position: absolute;
     left: 70%;
-    top: 15%;
+    top: 5%;
   }
 }
 .resto-prev__card .card__picture {
