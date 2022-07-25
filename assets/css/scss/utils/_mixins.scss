@@ -142,20 +142,6 @@
 
 // Fin de la police
 
-// Taille de la police
-
-@function calculateRem($size) {
-  $remSize: $size / 16px;
-  @return $remSize * 1rem;
-}
-
-@mixin font-size($size) {
-  font-size: $size;
-  font-size: calculateRem($size);
-}
-
-// Fin de la taille de la police
-
 // marges intérieures et extérieures
 
 @mixin padding($top, $right, $bottom, $left) {

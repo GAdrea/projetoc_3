@@ -32,7 +32,7 @@
     background-color: $primary-color;
     @media screen and (min-width: $tablet) {
       position: absolute;
-      left: 12%;
+      left: -3%;
     }
     @media screen and (min-width: $desktop) {
       position: absolute;
@@ -46,7 +46,7 @@
     left: 60px;
     @media screen and (min-width: $tablet) {
       position: absolute;
-      left: 25%;
+      left: 15%;
     }
     @media screen and (min-width: $desktop) {
       position: absolute;
