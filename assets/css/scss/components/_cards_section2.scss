@@ -2,7 +2,9 @@
   @include flexbox-rowcenter;
   text-decoration: none;
   color: black;
+  box-sizing: border-box;
   width: 90%;
+  min-width: 310px;
   height: 70px;
   margin-top: 30px;
   box-shadow: $boxshadow-standard;
