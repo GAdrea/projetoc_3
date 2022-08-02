@@ -312,6 +312,8 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
+  justify-content: flex-start;
+  position: relative;
   width: 90%;
   height: 70px;
   flex-wrap: wrap;
@@ -333,6 +335,19 @@ body {
     flex-wrap: wrap;
     height: 150px;
   }
+}
+.menu-card .splitleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 13px;
+  margin-right: 50px;
+}
+.menu-card .splitright {
+  position: absolute;
+  top: 38px;
+  right: 20px;
 }
 .menu-card .card_title {
   font-weight: bold;

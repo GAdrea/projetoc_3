@@ -25,6 +25,8 @@
   }
   .card {
     @include flexbox-rowcenter;
+    justify-content: flex-start;
+    position: relative;
     width: 90%;
     height: 70px;
     flex-wrap: wrap;
@@ -41,6 +43,16 @@
       flex-wrap: wrap;
       height: 150px;
     }
+  }
+  .splitleft {
+    @include flexbox-columnstart;
+    gap: 13px;
+    margin-right: 50px;
+  }
+  .splitright {
+    position: absolute;
+    top: 38px;
+    right: 20px;
   }
   .card_title {
     font-weight: bold;
