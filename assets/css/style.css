@@ -258,6 +258,9 @@ body {
   position: absolute;
   right: 15%;
 }
+.resto-prev__card .description__hearticon:hover {
+  color: transparent;
+}
 @media screen and (min-width: 576px) {
   .resto-prev__card .description__hearticon {
     position: relative;
@@ -270,6 +273,17 @@ body {
     left: 82%;
     bottom: 99%;
   }
+}
+.resto-prev__card .description__hearticonfill {
+  font-size: 30px;
+  position: absolute;
+  right: 11%;
+  top: 221px;
+  visibility: hidden;
+}
+.resto-prev__card .description__hearticonfill:hover {
+  visibility: visible;
+  color: red;
 }
 
 .menu-card {
