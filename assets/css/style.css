@@ -1,3 +1,22 @@
+@keyframes displayCoeur {
+  from {
+    color: white;
+  }
+  25% {
+    color: yellow;
+  }
+  75% {
+    color: green;
+  }
+  to {
+    color: violet;
+  }
+}
+/*
+translateY();
+translate3d(x,y,z);
+translate3d(0,-20px,0)
+*/
 @font-face {
   font-family: Shrikhand;
   src: url(../../../fonts/Shrikhand/Shrikhand-Regular.ttf) format(truetype);
@@ -258,8 +277,18 @@ body {
   position: absolute;
   right: 15%;
 }
+.resto-prev__card .description__hearticon i:last-child {
+  display: none;
+}
 .resto-prev__card .description__hearticon:hover {
   color: transparent;
+}
+.resto-prev__card .description__hearticon:hover i:first-child {
+  display: none;
+}
+.resto-prev__card .description__hearticon:hover i:last-child {
+  display: block;
+  animation: displayCoeur 0.5s ease-in-out forwards;
 }
 @media screen and (min-width: 576px) {
   .resto-prev__card .description__hearticon {

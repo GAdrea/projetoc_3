@@ -71,8 +71,18 @@
     font-size: 30px;
     position: absolute;
     right: 15%;
+    i:last-child{
+      display:none;
+    }
     &:hover {
       color: transparent;
+      i:first-child{
+        display: none;
+      }
+      i:last-child{
+        display: block;
+        animation: displayCoeur 0.5s ease-in-out forwards;
+      }
     }
     @media screen and (min-width: $tablet) {
       position: relative;
@@ -82,17 +92,6 @@
     @media screen and (min-width: $desktop) {
       left: 82%;
       bottom: 99%;
-    }
-  }
-  .description__hearticonfill {
-    font-size: 30px;
-    position: absolute;
-    right: 11%;
-    top: 221px;
-    visibility: hidden;
-    &:hover {
-      visibility: visible;
-      color: red;
     }
   }
 }
