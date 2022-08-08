@@ -1,17 +1,27 @@
-@keyframes displayCoeur {
-    from{
-        color:white
-    }
-    25%{
-        color: yellow;
-    }
-    75%{
-        color: green;
-    }
-    to{
-        color: violet;
-    }
+@keyframes displayheart {
+  from {
+    color: white;
+  }
+  // 50%{
+  //     color: $primary-color;
+  // }
+  // 75%{
+  //     color: green;
+  // }
+  to {
+    color: $secondary-color;
+  }
 }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /*
 translateY();
 translate3d(x,y,z);

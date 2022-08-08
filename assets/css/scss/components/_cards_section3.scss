@@ -71,17 +71,17 @@
     font-size: 30px;
     position: absolute;
     right: 15%;
-    i:last-child{
-      display:none;
+    i:last-child {
+      display: none;
     }
     &:hover {
       color: transparent;
-      i:first-child{
+      i:first-child {
         display: none;
       }
-      i:last-child{
+      i:last-child {
         display: block;
-        animation: displayCoeur 0.5s ease-in-out forwards;
+        animation: displayheart 1s ease-in-out forwards;
       }
     }
     @media screen and (min-width: $tablet) {
