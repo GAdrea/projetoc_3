@@ -51,8 +51,8 @@
   }
   .splitright {
     position: absolute;
-    top: 38px;
-    right: 20px;
+    top: -86px;
+    right: 0px;
   }
   .card_title {
     font-weight: bold;
@@ -78,6 +78,9 @@
     margin-top: 2px;
   }
   .card_checkicon {
-    display: none;
+    background-color: $tertiary-color;
+    width: 100%;
+    font-size: 150px;
+    border-radius: 0px 20px 20px 0px;
   }
 }
