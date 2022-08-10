@@ -11,7 +11,13 @@
   border-radius: 139px;
   box-shadow: $boxshadow-standard;
   background: #ff79da;
-  background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
+  background: linear-gradient(120deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
+  transition: all 500ms ease-in-out;
+  background-size: 400% 400%;
+  &:hover {
+    transform: scale(1.2);
+    animation: gradientshift 5s ease infinite;
+  }
   @media screen and (min-width: $tablet) {
     width: 40%;
   }

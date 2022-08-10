@@ -47,7 +47,7 @@ body {
 header,
 main,
 footer {
-  animation: fadein 2s;
+  animation: fadein 3s;
 }
 
 .loader {
@@ -60,7 +60,7 @@ footer {
   border-radius: 50%;
   width: 300px;
   height: 300px;
-  animation: spin 3s linear infinite, fadeout 2.5s forwards;
+  animation: spin 3s linear infinite, fadeout 2.2s forwards;
   z-index: 2;
   @media screen and (min-width: $tablet) {
     top: 32em;

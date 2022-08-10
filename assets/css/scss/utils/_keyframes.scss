@@ -59,6 +59,18 @@
 }
 
 // Fin de l'animation des fondus
+
+@keyframes gradientshift {
+  0% {
+    background-position: 0% 92%;
+  }
+  50% {
+    background-position: 100% 9%;
+  }
+  100% {
+    background-position: 0% 92%;
+  }
+}
 /*
 translateY();
 translate3d(x,y,z);
