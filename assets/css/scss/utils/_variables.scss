@@ -6,12 +6,12 @@ $desktop: 992px;
 
 // Map
 $breakpoint: (
-    "xs": 400px,
-    "sm":544px,
-    "md":768px,
-    "lg":960px,
-    "xl":1280px,
-    "xxl":1440px,
+  "xs": 400px,
+  "sm": 544px,
+  "md": 768px,
+  "lg": 960px,
+  "xl": 1280px,
+  "xxl": 1440px,
 );
 // Fin de la map
 
@@ -24,6 +24,7 @@ $tertiary-color: #99e2d0;
 $background-color-grey: #f6f6f6;
 $background-color-darkgrey: #eaeaea;
 $footer-background: #353535;
+$button-color: #ff79da; 
 // Fin des variables pour les couleurs
 
 // Variables pour la police
