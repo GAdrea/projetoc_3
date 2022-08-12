@@ -29,7 +29,6 @@
   animation: gradientshift 3s ease-in-out infinite;
   &:hover {
     transform: scale(1.2);
- 
     cursor: pointer;
   }
   @media screen and (min-width: $tablet) {

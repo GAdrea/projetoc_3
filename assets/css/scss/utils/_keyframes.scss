@@ -60,6 +60,7 @@
 
 // Fin de l'animation des fondus
 
+// Animation du dégradé
 @keyframes gradientshift {
   0% {
     background-position: 0% 92%;
@@ -71,6 +72,8 @@
     background-position: 0% 92%;
   }
 }
+
+// Fin de l'animation du dégradé
 /*
 translateY();
 translate3d(x,y,z);
