@@ -1,16 +1,14 @@
 // Coloration du coeur
 @keyframes displayheart {
   from {
-    color: white;
+    color: lightgray;
   }
-  // 50%{
-  //     color: $primary-color;
-  // }
+
   // 75%{
   //     color: green;
   // }
   to {
-    color: $secondary-color;
+     color: $secondary-color;
   }
 }
 
