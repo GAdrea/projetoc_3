@@ -72,6 +72,26 @@
 }
 
 // Fin de l'animation du dégradé
+
+@keyframes checkiconshow {
+  from {
+      width: 0;
+  }
+
+  to {
+      width: 60px;
+  }
+}
+
+@keyframes checkiconhide {
+  from {
+      width: 60px;
+  }
+
+  to {
+      width: 0;
+  }
+}
 /*
 translateY();
 translate3d(x,y,z);
