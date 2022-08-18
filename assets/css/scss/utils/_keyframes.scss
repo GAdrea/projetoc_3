@@ -8,7 +8,7 @@
   //     color: green;
   // }
   to {
-     color: $secondary-color;
+    color: $secondary-color;
   }
 }
 
@@ -75,23 +75,34 @@
 
 @keyframes checkiconshow {
   from {
-      width: 0;
+    width: 0;
   }
 
   to {
-      width: 60px;
+    width: 60px;
   }
 }
 
 @keyframes checkiconhide {
   from {
-      width: 60px;
+    width: 60px;
   }
 
   to {
-      width: 0;
+    width: 0;
   }
 }
+
+@keyframes checkiconrotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /*
 translateY();
 translate3d(x,y,z);

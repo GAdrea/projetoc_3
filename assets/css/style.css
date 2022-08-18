@@ -63,6 +63,14 @@
     width: 0;
   }
 }
+@keyframes checkiconrotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /*
 translateY();
 translate3d(x,y,z);
@@ -99,9 +107,6 @@ a {
 
 p {
   font-family: Roboto;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 img {
@@ -432,7 +437,7 @@ footer {
   justify-content: flex-start;
   position: relative;
   width: 90%;
-  height: 70px;
+  height: 65px;
   flex-wrap: wrap;
   border-radius: 20px 20px 20px 20px;
   color: black;
@@ -441,6 +446,9 @@ footer {
   box-shadow: 5px 5px 8px 5px #dfdfdf;
   margin-bottom: 20px;
   padding: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 @media screen and (min-width: 576px) {
   .menu-card .card {
@@ -450,7 +458,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 81px;
+    height: 65px;
   }
 }
 .menu-card .splitleft {
@@ -463,8 +471,9 @@ footer {
 }
 .menu-card .splitright {
   position: absolute;
-  top: -2px;
+  top: 0px;
   right: 0px;
+  display: flex;
 }
 .menu-card .card_title {
   font-weight: bold;
@@ -516,6 +525,9 @@ footer {
 }
 .menu-card .card_checkicon:hover {
   animation: checkiconshow 0.4s ease-in-out forwards;
+}
+.menu-card .card_checkicon:hover > i {
+  animation: checkiconrotate 0.4s ease-in-out forwards;
 }
 
 .order_button {
@@ -596,6 +608,11 @@ footer {
   .index-head .logo_picture {
     width: 100%;
   }
+}
+
+.page-head_returnlink {
+  color: black;
+  cursor: pointer;
 }
 
 .index-foot {
@@ -831,6 +848,19 @@ main .section3 {
 }
 .menu .maintitle_icon {
   font-size: 1.8rem;
+}
+.menu .maintitle_icon i:last-child {
+  display: none;
+}
+.menu .maintitle_icon:hover {
+  color: transparent;
+}
+.menu .maintitle_icon:hover i:first-child {
+  display: none;
+}
+.menu .maintitle_icon:hover i:last-child {
+  display: block;
+  animation: displayheart 1s ease-in-out forwards;
 }
 @media screen and (min-width: 576px) {
   .menu .maintitle_icon {

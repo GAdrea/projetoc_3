@@ -28,7 +28,7 @@
     justify-content: flex-start;
     position: relative;
     width: 90%;
-    height: 70px;
+    height: 65px;
     flex-wrap: wrap;
     border-radius: 20px 20px 20px 20px;
     color: black;
@@ -37,11 +37,12 @@
     box-shadow: 5px 5px 8px 5px #dfdfdf;
     margin-bottom: 20px;
     padding: 15px;
+    @include text-shorten;
     @media screen and (min-width: $tablet) {
       width: 30%;
       @include flexbox-columncenter;
       flex-wrap: wrap;
-      height: 81px;
+      height: 65px;
     }
   }
   .splitleft {
@@ -51,8 +52,9 @@
   }
   .splitright {
     position: absolute;
-    top: -2px;
+    top: 0px;
     right: 0px;
+    display: flex;
   }
   .card_title {
     font-weight: bold;
@@ -93,6 +95,9 @@
     animation: checkiconhide 0.4s ease-in-out forwards;
     &:hover {
       animation: checkiconshow 0.4s ease-in-out forwards;
+      & > i {
+        animation: checkiconrotate 0.4s ease-in-out forwards;
+      }
     }
   }
 }

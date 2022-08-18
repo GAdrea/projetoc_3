@@ -32,7 +32,6 @@ a {
 
 p {
   font-family: Roboto;
-  @include text-shorten;
 }
 
 img {
@@ -49,16 +48,16 @@ main,
 footer {
   animation: fadein 3s;
 }
-#loader-container{
+#loader-container {
   position: fixed;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   .loader {
     position: relative;
     top: 25%;
-    margin:auto;
+    margin: auto;
     border: 16px solid $background-color-grey;
     border-top: 16px solid $primary-color;
     border-bottom: 16px solid $secondary-color;
@@ -69,4 +68,3 @@ footer {
     z-index: 2;
   }
 }
-
