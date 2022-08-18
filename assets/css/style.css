@@ -55,14 +55,6 @@
     width: 60px;
   }
 }
-@keyframes checkiconhide {
-  from {
-    width: 60px;
-  }
-  to {
-    width: 0;
-  }
-}
 @keyframes checkiconrotate {
   from {
     transform: rotate(0deg);
@@ -424,6 +416,11 @@ footer {
     width: 100%;
   }
 }
+@media screen and (min-width: 992px) {
+  .menu-card .card_maintitle {
+    text-align: left;
+  }
+}
 .menu-card .maintitle_border {
   width: 10%;
   border-bottom: 3px solid #99e2d0;
@@ -458,7 +455,7 @@ footer {
   text-decoration: none;
   box-shadow: 5px 5px 8px 5px #dfdfdf;
   margin-bottom: 20px;
-  padding: 15px;
+  padding: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -473,6 +470,17 @@ footer {
     flex-wrap: wrap;
     height: 65px;
   }
+}
+@media screen and (min-width: 992px) {
+  .menu-card .card {
+    width: 100%;
+  }
+}
+.menu-card .card:hover .card_checkicon {
+  animation: checkiconshow 0.4s ease-in-out forwards;
+}
+.menu-card .card:hover .card_checkicon > i {
+  animation: checkiconrotate 0.4s ease-in-out forwards;
 }
 .menu-card .splitleft {
   display: flex;
@@ -534,13 +542,6 @@ footer {
   text-align: center;
   font-size: 20px;
   line-height: 65px;
-  animation: checkiconhide 0.4s ease-in-out forwards;
-}
-.menu-card .card_checkicon:hover {
-  animation: checkiconshow 0.4s ease-in-out forwards;
-}
-.menu-card .card_checkicon:hover > i {
-  animation: checkiconrotate 0.4s ease-in-out forwards;
 }
 
 .order_button {
@@ -834,6 +835,13 @@ main .section3 {
   border-radius: 50px 50px 0px 0px;
   background-color: #f6f6f6;
 }
+@media screen and (min-width: 992px) {
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
 .menu .menu_maintitle {
   display: flex;
   flex-direction: row;
@@ -873,6 +881,7 @@ main .section3 {
 }
 .menu .maintitle_icon:hover i:last-child {
   display: block;
+  cursor: pointer;
   animation: displayheart 1s ease-in-out forwards;
 }
 @media screen and (min-width: 576px) {
@@ -891,4 +900,9 @@ main .section3 {
   padding-top: 10px;
   padding-bottom: 80px;
   background-color: #f6f6f6;
+}
+@media screen and (min-width: 992px) {
+  .order {
+    width: 100%;
+  }
 }

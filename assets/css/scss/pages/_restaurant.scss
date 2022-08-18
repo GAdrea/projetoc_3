@@ -36,6 +36,11 @@
   margin-top: -60px;
   border-radius: 50px 50px 0px 0px;
   background-color: $background-color-grey;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
   .menu_maintitle {
     @include flexbox-rowcenter;
     gap: 120px;
@@ -66,6 +71,7 @@
       }
       i:last-child {
         display: block;
+        cursor: pointer;
         animation: displayheart 1s ease-in-out forwards;
       }
     }
@@ -86,6 +92,9 @@
   padding-top: 10px;
   padding-bottom: 80px;
   background-color: $background-color-grey;
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+  }
 }
 
 // Fin de la section order

@@ -15,6 +15,9 @@
       text-align: center;
       width: 100%;
     }
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+    }
   }
   .maintitle_border {
     width: 10%;
@@ -42,13 +45,24 @@
     text-decoration: none;
     box-shadow: 5px 5px 8px 5px #dfdfdf;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 20px;
     @include text-shorten;
     @media screen and (min-width: $tablet) {
       width: 30%;
       @include flexbox-columncenter;
       flex-wrap: wrap;
       height: 65px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 100%;
+    }
+    &:hover {
+      .card_checkicon {
+        animation: checkiconshow 0.4s ease-in-out forwards;
+        & > i {
+          animation: checkiconrotate 0.4s ease-in-out forwards;
+        }
+      }
     }
   }
   .splitleft {
@@ -98,12 +112,12 @@
     text-align: center;
     font-size: 20px;
     line-height: 65px;
-    animation: checkiconhide 0.4s ease-in-out forwards;
-    &:hover {
-      animation: checkiconshow 0.4s ease-in-out forwards;
-      & > i {
-        animation: checkiconrotate 0.4s ease-in-out forwards;
-      }
-    }
+    //animation: checkiconhide 0.4s ease-in-out forwards;
+    // &:hover {
+    //   animation: checkiconshow 0.4s ease-in-out forwards;
+    //   & > i {
+    //     animation: checkiconrotate 0.4s ease-in-out forwards;
+    //   }
+    // }
   }
 }
