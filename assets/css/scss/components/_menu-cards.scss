@@ -4,6 +4,9 @@
     @include flexbox-spacebetween;
     flex-wrap: wrap;
   }
+  @media screen and (min-width: $desktop) {
+    @include flexbox-columncenter;
+  }
   .card_maintitle {
     font-size: $title2-size;
     font-weight: normal;
@@ -21,6 +24,9 @@
     margin-left: 28px;
     @media screen and (min-width: $tablet) {
       width: 100%;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 30%;
     }
   }
   .card {

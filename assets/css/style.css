@@ -405,6 +405,14 @@ footer {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 992px) {
+  .menu-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .menu-card .card_maintitle {
   font-size: 1.5rem;
   font-weight: normal;
@@ -426,6 +434,11 @@ footer {
 @media screen and (min-width: 576px) {
   .menu-card .maintitle_border {
     width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu-card .maintitle_border {
+    width: 30%;
   }
 }
 .menu-card .card {
@@ -865,6 +878,11 @@ main .section3 {
 @media screen and (min-width: 576px) {
   .menu .maintitle_icon {
     width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu .maintitle_icon {
+    width: 3%;
   }
 }
 
