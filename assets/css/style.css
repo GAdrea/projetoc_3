@@ -403,6 +403,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 31%;
   }
 }
 .menu-card .card_maintitle {

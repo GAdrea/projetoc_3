@@ -6,6 +6,7 @@
   }
   @media screen and (min-width: $desktop) {
     @include flexbox-columncenter;
+    width: 31%;
   }
   .card_maintitle {
     font-size: $title2-size;
