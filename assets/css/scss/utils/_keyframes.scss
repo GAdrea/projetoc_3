@@ -73,6 +73,22 @@
 
 // Fin de l'animation du dégradé
 
+// Animation apparition des menus
+
+@keyframes showmenu {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+// Fin de l'animation pour l'apparition des menus
+
+// Animation pour l'icône de validation
 @keyframes checkiconshow {
   from {
     width: 0;
@@ -103,6 +119,7 @@
   }
 }
 
+// Fin de l'animation pour l'icône de validation
 /*
 translateY();
 translate3d(x,y,z);

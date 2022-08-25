@@ -24,7 +24,7 @@ $tertiary-color: #99e2d0;
 $background-color-grey: #f6f6f6;
 $background-color-darkgrey: #eaeaea;
 $footer-background: #353535;
-$button-color: #ff79da; 
+$button-color: #ff79da;
 // Fin des variables pour les couleurs
 
 // Variables pour la police
@@ -44,3 +44,11 @@ $description-size: 0.5rem;
 $boxshadow-standard: 8px 10px 20px 7px rgba(223, 223, 223, 0.86);
 
 // Fin des variables pour les ombres
+
+// Délai animation
+
+$animationshow: 1000ms;
+$animationshowdelay: 500ms;
+$animdelay: $animationshow + $animationshowdelay;
+
+// Fin délai animation
