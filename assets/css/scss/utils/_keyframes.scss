@@ -120,6 +120,15 @@
 }
 
 // Fin de l'animation pour l'icône de validation
+
+@keyframes vanish {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
 /*
 translateY();
 translate3d(x,y,z);
