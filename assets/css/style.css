@@ -648,6 +648,11 @@ footer {
   color: black;
   cursor: pointer;
 }
+@media screen and (min-width: 992px) {
+  .page-head_returnlink {
+    font-size: 4.8rem;
+  }
+}
 
 .index-foot {
   display: flex;
@@ -887,6 +892,7 @@ main .section3 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: -221px;
   }
 }
 .menu .menu_maintitle {

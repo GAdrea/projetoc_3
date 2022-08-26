@@ -49,6 +49,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: -221px;
   }
   .menu_maintitle {
     @include flexbox-rowcenter;
