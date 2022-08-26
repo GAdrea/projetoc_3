@@ -87,16 +87,14 @@ translate3d(x,y,z);
 translate3d(0,-20px,0)
 */
 @font-face {
-  font-family: Shrikhand;
-  src: url(../../../fonts/Shrikhand/Shrikhand-Regular.ttf) format(truetype);
-  src: url(../../../fonts/Shrikhand/shrikhand-regular-webfont.woff) format(woff);
-  src: url(../../../fonts/Shrikhand/shrikhand-regular-webfont.woff2) format(woff2);
+  font-family: "Shrikhand";
+  src: url("../fonts/Shrikhand/Shrikhand-Regular.ttf") format(truetype);
+  src: url("../fonts/Shrikhand/shrikhand-regular-webfont.woff") format(woff);
+  src: url("../fonts/Shrikhand/shrikhand-regular-webfont.woff2") format(woff2);
 }
 @font-face {
-  font-family: Roboto;
-  src: url(../../../fonts/Roboto/Roboto-Regular.ttf) format(truetype);
-  src: url(../../../fonts/Roboto/roboto-regular-webfont.woff);
-  src: url(../../../fonts/Roboto/roboto-regular-webfont.woff2);
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto/roboto-regular-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-regular-webfont.woff2") format("woff2");
 }
 * {
   scroll-behavior: smooth;
@@ -117,7 +115,7 @@ a {
 }
 
 p {
-  font-family: Roboto;
+  font-family: "Roboto";
 }
 
 img {
