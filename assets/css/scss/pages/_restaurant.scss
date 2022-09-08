@@ -7,7 +7,7 @@
     margin-bottom: 10px;
   }
   .page-head_returnlink {
-    font-size: $title-size;
+    font-size: 4.8rem;
     position: absolute;
     left: 4%;
   }
@@ -49,7 +49,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: -221px;
+    margin-top: -413px;
   }
   .menu_maintitle {
     @include flexbox-rowcenter;

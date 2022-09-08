@@ -846,7 +846,7 @@ main .section3 {
   margin-bottom: 10px;
 }
 .page-head .page-head_returnlink {
-  font-size: 1.8rem;
+  font-size: 4.8rem;
   position: absolute;
   left: 4%;
 }
@@ -890,7 +890,7 @@ main .section3 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: -221px;
+    margin-top: -413px;
   }
 }
 .menu .menu_maintitle {
