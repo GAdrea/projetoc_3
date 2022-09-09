@@ -474,9 +474,6 @@ footer {
   box-shadow: 5px 5px 8px 5px #dfdfdf;
   margin-bottom: 20px;
   padding: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 @media screen and (min-width: 576px) {
   .menu-card .card {
@@ -507,12 +504,21 @@ footer {
   align-items: flex-start;
   gap: 13px;
   margin-right: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu-card .splitleft p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu-card .splitright {
   position: absolute;
   top: 0px;
   right: 0px;
   display: flex;
+  overflow: hidden;
 }
 .menu-card .card_title {
   font-weight: bold;

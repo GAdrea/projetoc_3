@@ -47,7 +47,6 @@
     box-shadow: 5px 5px 8px 5px #dfdfdf;
     margin-bottom: 20px;
     padding: 20px;
-    @include text-shorten;
     @media screen and (min-width: $tablet) {
       width: 30%;
       @include flexbox-columncenter;
@@ -70,12 +69,17 @@
     @include flexbox-columnstart;
     gap: 13px;
     margin-right: 50px;
+    @include text-shorten;
+    p {
+      @include text-shorten;
+    }
   }
   .splitright {
     position: absolute;
     top: 0px;
     right: 0px;
     display: flex;
+    overflow: hidden;
   }
   .card_title {
     font-weight: bold;
