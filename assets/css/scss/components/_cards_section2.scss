@@ -12,7 +12,7 @@
   background-color: $background-color-grey;
   transition: all 500ms ease-in-out;
   &:hover {
-    background-color: $secondary-color;
+    background-color: $lightpurple;
     transform: scale(1.1);
   }
   @media screen and (min-width: $tablet) {
@@ -51,6 +51,10 @@
     color: rgba(0, 0, 0, 0.506);
     position: absolute;
     left: 60px;
+    transition: all 500ms ease-in-out;
+    &:hover {
+      color: $primary-color;
+    }
     @media screen and (min-width: $tablet) {
       position: absolute;
       left: 15%;

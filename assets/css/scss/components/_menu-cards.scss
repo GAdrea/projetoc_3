@@ -47,8 +47,8 @@
     margin-bottom: 20px;
     @media screen and (min-width: $tablet) {
       width: 29%;
-      @include flexbox-columncenter;
-      flex-wrap: wrap;
+      //@include flexbox-columncenter;
+      //flex-wrap: wrap;
       height: 85px;
     }
     @media screen and (min-width: $desktop) {
@@ -70,6 +70,7 @@
       @media screen and(min-width:$tablet) {
         padding: 0;
         padding-top: 9px;
+        flex-grow: 1;
       }
       p {
         @include text-shorten;

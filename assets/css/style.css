@@ -210,7 +210,7 @@ footer {
   transition: all 500ms ease-in-out;
 }
 .section2__card:hover {
-  background-color: #ff79da;
+  background-color: #e4d5f6;
   transform: scale(1.1);
 }
 @media screen and (min-width: 576px) {
@@ -265,6 +265,10 @@ footer {
   color: rgba(0, 0, 0, 0.506);
   position: absolute;
   left: 60px;
+  transition: all 500ms ease-in-out;
+}
+.section2__card .section2__icon:hover {
+  color: #9356dc;
 }
 @media screen and (min-width: 576px) {
   .section2__card .section2__icon {
@@ -480,11 +484,6 @@ footer {
 @media screen and (min-width: 576px) {
   .menu-card .card {
     width: 29%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     height: 85px;
   }
 }
@@ -514,6 +513,7 @@ footer {
   .menu-card .card .splitleft {
     padding: 0;
     padding-top: 9px;
+    flex-grow: 1;
   }
 }
 .menu-card .card .splitleft p {
