@@ -508,7 +508,13 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding-top: 23px;
+  padding: 19px;
+}
+@media screen and (min-width: 576px) {
+  .menu-card .card .splitleft {
+    padding: 0;
+    padding-top: 9px;
+  }
 }
 .menu-card .card .splitleft p {
   overflow: hidden;
