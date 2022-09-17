@@ -207,6 +207,11 @@ footer {
   box-shadow: 8px 10px 20px 7px rgba(223, 223, 223, 0.86);
   border-radius: 15px;
   background-color: #f6f6f6;
+  transition: all 500ms ease-in-out;
+}
+.section2__card:hover {
+  background-color: #ff79da;
+  transform: scale(1.1);
 }
 @media screen and (min-width: 576px) {
   .section2__card {
