@@ -69,11 +69,9 @@
       padding: 19px;
       @media screen and(min-width:$tablet) {
         padding: 0;
+        padding-left: 19px;
         padding-top: 9px;
         flex-grow: 1;
-      }
-      p {
-        @include text-shorten;
       }
     }
     .splitright {

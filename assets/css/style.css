@@ -1,3 +1,11 @@
+@-webkit-keyframes displayheart {
+  from {
+    color: lightgray;
+  }
+  to {
+    color: #ff79da;
+  }
+}
 @keyframes displayheart {
   from {
     color: lightgray;
@@ -6,12 +14,31 @@
     color: #ff79da;
   }
 }
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes fadein {
@@ -25,6 +52,17 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes fadeout {
   0% {
     opacity: 1;
@@ -34,6 +72,17 @@
   }
   100% {
     opacity: 0;
+  }
+}
+@-webkit-keyframes gradientshift {
+  0% {
+    background-position: 0% 92%;
+  }
+  50% {
+    background-position: 100% 9%;
+  }
+  100% {
+    background-position: 0% 92%;
   }
 }
 @keyframes gradientshift {
@@ -47,6 +96,16 @@
     background-position: 0% 92%;
   }
 }
+@-webkit-keyframes showmenu {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 @keyframes showmenu {
   from {
     opacity: 0;
@@ -57,12 +116,28 @@
     transform: translateY(0px);
   }
 }
+@-webkit-keyframes checkiconshow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60px;
+  }
+}
 @keyframes checkiconshow {
   from {
     width: 0;
   }
   to {
     width: 60px;
+  }
+}
+@-webkit-keyframes checkiconrotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 @keyframes checkiconrotate {
@@ -73,12 +148,22 @@
     transform: rotate(360deg);
   }
 }
+@-webkit-keyframes vanish {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+    z-index: -100;
+  }
+}
 @keyframes vanish {
   from {
     width: 100%;
   }
   to {
     width: 0%;
+    z-index: -100;
   }
 }
 /*
@@ -119,7 +204,8 @@ p {
 }
 
 img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body {
@@ -130,7 +216,8 @@ body {
 header,
 main,
 footer {
-  animation: fadein 3s;
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
 }
 
 #loader-container {
@@ -150,7 +237,8 @@ footer {
   border-radius: 50%;
   width: 300px;
   height: 300px;
-  animation: spin 3s linear infinite, fadeout 2.2s forwards, vanish 1s 6s ease-out forwards;
+  -webkit-animation: spin 3s linear infinite, fadeout 2.2s forwards, vanish 1s 6s ease-out forwards;
+          animation: spin 3s linear infinite, fadeout 2.2s forwards, vanish 1s 6s ease-out forwards;
   z-index: 2;
 }
 
@@ -174,7 +262,8 @@ footer {
   background: linear-gradient(120deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
   transition: all 500ms ease-in-out;
   background-size: 400% 400%;
-  animation: gradientshift 3s ease-in-out infinite;
+  -webkit-animation: gradientshift 3s ease-in-out infinite;
+          animation: gradientshift 3s ease-in-out infinite;
 }
 .section1__searchbutton:hover {
   transform: scale(1.2);
@@ -396,7 +485,8 @@ footer {
 }
 .resto-prev__card .description__hearticon:hover i:last-child {
   display: block;
-  animation: displayheart 1s ease-in-out forwards;
+  -webkit-animation: displayheart 1s ease-in-out forwards;
+          animation: displayheart 1s ease-in-out forwards;
 }
 @media screen and (min-width: 576px) {
   .resto-prev__card .description__hearticon {
@@ -493,10 +583,12 @@ footer {
   }
 }
 .menu-card .card:hover .card_checkicon {
-  animation: checkiconshow 0.4s ease-in-out forwards;
+  -webkit-animation: checkiconshow 0.4s ease-in-out forwards;
+          animation: checkiconshow 0.4s ease-in-out forwards;
 }
 .menu-card .card:hover .card_checkicon > i {
-  animation: checkiconrotate 0.4s ease-in-out forwards;
+  -webkit-animation: checkiconrotate 0.4s ease-in-out forwards;
+          animation: checkiconrotate 0.4s ease-in-out forwards;
 }
 .menu-card .card .splitleft {
   display: flex;
@@ -512,14 +604,10 @@ footer {
 @media screen and (min-width: 576px) {
   .menu-card .card .splitleft {
     padding: 0;
+    padding-left: 19px;
     padding-top: 9px;
     flex-grow: 1;
   }
-}
-.menu-card .card .splitleft p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .menu-card .card .splitright {
   display: flex;
@@ -592,13 +680,12 @@ footer {
   border-radius: 139px;
   box-shadow: 8px 10px 20px 7px rgba(223, 223, 223, 0.86);
   background: #ff79da;
-  background: -moz-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
-  background: -webkit-linear-gradient(-45deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
   background: linear-gradient(135deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
   background: linear-gradient(120deg, #ff79da 0%, #ff79da 16%, #9356dc 100%);
   transition: all 500ms ease-in-out;
   background-size: 400% 400%;
-  animation: gradientshift 3s ease-in-out infinite;
+  -webkit-animation: gradientshift 3s ease-in-out infinite;
+          animation: gradientshift 3s ease-in-out infinite;
 }
 .order_button:hover {
   transform: scale(1.2);
@@ -885,19 +972,24 @@ main .section3 {
   opacity: 0;
 }
 .menu > div:nth-child(1) {
-  animation: showmenu 1500ms 0.3s ease-in forwards;
+  -webkit-animation: showmenu 1500ms 0.3s ease-in forwards;
+          animation: showmenu 1500ms 0.3s ease-in forwards;
 }
 .menu > div:nth-child(2) {
-  animation: showmenu 1500ms 0.6s ease-in forwards;
+  -webkit-animation: showmenu 1500ms 0.6s ease-in forwards;
+          animation: showmenu 1500ms 0.6s ease-in forwards;
 }
 .menu > div:nth-child(3) {
-  animation: showmenu 1500ms 0.9s ease-in forwards;
+  -webkit-animation: showmenu 1500ms 0.9s ease-in forwards;
+          animation: showmenu 1500ms 0.9s ease-in forwards;
 }
 .menu > div:nth-child(4) {
-  animation: showmenu 1500ms 1.2s ease-in forwards;
+  -webkit-animation: showmenu 1500ms 1.2s ease-in forwards;
+          animation: showmenu 1500ms 1.2s ease-in forwards;
 }
 .menu > div:nth-child(5) {
-  animation: showmenu 1500ms 1.5s ease-in forwards;
+  -webkit-animation: showmenu 1500ms 1.5s ease-in forwards;
+          animation: showmenu 1500ms 1.5s ease-in forwards;
 }
 @media screen and (min-width: 992px) {
   .menu {
@@ -947,7 +1039,8 @@ main .section3 {
 .menu .maintitle_icon:hover i:last-child {
   display: block;
   cursor: pointer;
-  animation: displayheart 1s ease-in-out forwards;
+  -webkit-animation: displayheart 1s ease-in-out forwards;
+          animation: displayheart 1s ease-in-out forwards;
 }
 @media screen and (min-width: 576px) {
   .menu .maintitle_icon {
@@ -970,4 +1063,4 @@ main .section3 {
   .order {
     width: 100%;
   }
-}
+}/*# sourceMappingURL=style.css.map */
