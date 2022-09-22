@@ -546,7 +546,7 @@ footer {
 }
 @media screen and (min-width: 992px) {
   .menu-card .card .card_title {
-    font-size: 24px;
+    font-size: 21px;
   }
 }
 .menu-card .card .card_subtitle {
@@ -567,7 +567,7 @@ footer {
 }
 @media screen and (min-width: 992px) {
   .menu-card .card .card_subtitle {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .menu-card .card .card_price {
