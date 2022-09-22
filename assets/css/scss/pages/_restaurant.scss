@@ -10,6 +10,9 @@
     font-size: 1.8rem;
     position: absolute;
     left: 4%;
+    @media screen and(min-width:$tablet) {
+      font-size: 3rem;
+    }
   }
   .page-head_logo {
     width: 50%;

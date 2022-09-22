@@ -540,8 +540,13 @@ footer {
     justify-content: center;
     align-items: center;
     align-items: flex-start;
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu-card .card .card_title {
+    font-size: 24px;
   }
 }
 .menu-card .card .card_subtitle {
@@ -558,6 +563,11 @@ footer {
     align-items: center;
     align-items: flex-start;
     font-size: 10px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu-card .card .card_subtitle {
+    font-size: 18px;
   }
 }
 .menu-card .card .card_price {
@@ -866,6 +876,11 @@ main .section3 {
   font-size: 1.8rem;
   position: absolute;
   left: 4%;
+}
+@media screen and (min-width: 576px) {
+  .page-head .page-head_returnlink {
+    font-size: 3rem;
+  }
 }
 .page-head .page-head_logo {
   width: 50%;
