@@ -91,11 +91,11 @@
       @media screen and (min-width: $tablet) {
         @include flexbox-columncenter;
         align-items: flex-start;
-        font-size: 14px;
+        font-size: $card-subtitle-tabletsize;
         margin-bottom: 15px;
       }
       @media screen and (min-width: $desktop) {
-        font-size: 21px;
+        font-size: $card-sutitle-desktopsize;
       }
     }
     .card_subtitle {
@@ -106,10 +106,10 @@
       @media screen and (min-width: $tablet) {
         @include flexbox-columncenter;
         align-items: flex-start;
-        font-size: 10px;
+        font-size: 1$card-subtitle-tabletsize;
       }
       @media screen and (min-width: $desktop) {
-        font-size: 16px;
+        font-size: $card-sutitle-desktopsize;
       }
     }
     .card_price {
