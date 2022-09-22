@@ -540,13 +540,13 @@ footer {
     justify-content: center;
     align-items: center;
     align-items: flex-start;
-    font-size: 14px;
+    font-size: 10px;
     margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 992px) {
   .menu-card .card .card_title {
-    font-size: 21px;
+    font-size: 16px;
   }
 }
 .menu-card .card .card_subtitle {
@@ -562,7 +562,7 @@ footer {
     justify-content: center;
     align-items: center;
     align-items: flex-start;
-    font-size: 10px;
+    font-size: 1 10px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -889,7 +889,7 @@ main .section3 {
 
 .picture {
   width: 100%;
-  height: auto;
+  height: 1080px;
 }
 
 .menu {
@@ -921,6 +921,7 @@ main .section3 {
   .menu {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
     flex-wrap: wrap;
     margin-top: -413px;
   }
