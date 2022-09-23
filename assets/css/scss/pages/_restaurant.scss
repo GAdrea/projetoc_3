@@ -26,7 +26,13 @@
 
 .picture {
   width: 100%;
-  height: 1080px;
+  height: auto;
+  @media screen and (min-width: $tablet) {
+    height: 522px;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 1080px;
+  }
 }
 
 // Fin de la partie pour l'image

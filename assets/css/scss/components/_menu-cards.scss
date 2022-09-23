@@ -106,7 +106,7 @@
       @media screen and (min-width: $tablet) {
         @include flexbox-columncenter;
         align-items: flex-start;
-        font-size: 1$card-subtitle-tabletsize;
+        font-size: $card-subtitle-tabletsize;
       }
       @media screen and (min-width: $desktop) {
         font-size: $card-sutitle-desktopsize;
